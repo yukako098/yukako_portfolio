@@ -1,0 +1,480 @@
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Francois One', sans-serif; */
+
+
+/* basic css */
+
+html,
+body {
+    padding: 0;
+    height: 100%;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighter;
+}
+
+a {
+    color: inherit;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.sidebar_a::after {
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+    content: '';
+    width: 35%;
+    height: 2px;
+    background: #f4f4f4;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.sidebar_a:hover::after {
+    transform: scale(1.5, 1);
+}
+
+a::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #f4f4f4;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+a:hover::after {
+    transform: scale(1, 1);
+}
+
+body {
+    background-color: #272725;
+    color: #f4f4f4;
+    margin: 0 auto;
+    width: 80%;
+    transition: background-color .5s;
+    /* when side bar worked on*/
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    height: 100%;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+/* header css */
+.header_container {
+    flex-direction: column;
+    padding: 2.3em 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_logo {
+    cursor: pointer;
+    font-size: 2.0em;
+    z-index: 5;
+    position: absolute;
+    top: 1.5em;
+    left: 5em;
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+header ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    font-size: 0.9em;
+}
+
+
+header ul li a {
+    text-decoration: none;
+}
+
+/* sidebar css */
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: #141414;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.sidenav a {
+    padding: 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #BEBEBE;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #F4F4F4;
+}
+
+.sidebar_header {
+    height: 12.8%;
+    margin-bottom: 5%;
+}
+
+.cancel {
+    position: absolute;
+    top: 12.5%;
+    left: 88%;
+    font-size: 2.5em;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+
+.sidebar_menus {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    text-align: center;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.sidebar_menu {
+    display: flex;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar_num {
+    padding: 0px 0px 0px 40px;
+}
+
+.sidebar_menu_num {
+    display: inline-block;
+    padding: 0px 0px 0px 5px;
+}
+
+.num_rotate {
+    transform: rotate(270deg);
+    font-size: 10px;
+    margin: 0px;
+}
+
+.center_bar {
+    margin: 15px 0px 0px 0px;
+}
+
+.sidebar_title {
+    margin: 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 40px;
+
+}
+
+.sidebar_description {
+    text-align: left;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Francois One', sans-serif;
+}
+
+/* font awesome */
+.fab {
+    font-size: 1.2em;
+}
+
+.icon1,
+.icon2 {
+    padding-top: 40px
+}
+
+.icon1 {
+    padding-right: 30px;
+}
+
+.icon2 {
+    padding-right: -30px;
+}
+
+
+
+/* index.html */
+
+.top_page {
+    margin-right: auto;
+}
+
+.top_page_section {
+    /* margin-top: -2.3en; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: calc(100% + 2.3em); */
+    height: 100%;
+}
+
+.main_section {
+    text-align: center;
+}
+
+.typewrite {
+    font-size: 100px;
+}
+
+
+
+/* about.html */
+
+.title_top {
+    font-size: 75px;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.title_bottom {
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about_section {
+    display: flex;
+    width: 95%;
+}
+
+.about_left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.about_me {
+    margin-bottom: 3.5em;
+}
+
+.about_introduce {
+    font-family: 'Francois One',
+        sans-serif;
+    letter-spacing: 1px;
+    margin-top: 0px;
+}
+
+
+.about_right {
+    flex: 1;
+}
+
+.sns ul {
+    display: flex;
+    padding-left: 20px;
+}
+
+.sns ul li {
+    margin-right: 20px;
+}
+
+.about_pic {
+    width: 100%;
+    height: 90%;
+    padding: 20px 0px 20px 0px;
+}
+
+
+/* project.html */
+.header_fullpage {
+    top: 0;
+}
+
+.footer_fullpage,
+.header_fullpage {
+    position: fixed;
+    background: #272725;
+    width: 89%;
+    z-index: 2;
+    left: 0;
+}
+
+.footer_fullpage {
+    position: fixed;
+    bottom: 0;
+    height: 8%
+}
+
+.container {
+    height: 77%;
+    margin-top: 129px;
+    margin-left: 20px;
+}
+
+.bigger_rectangle {
+    background-color: yellow;
+    width: 72%;
+    height: 80%;
+}
+
+.smaller_rectangle {
+    background-color: white;
+    position: absolute;
+    top: 21%;
+    left: 57%;
+    right: 0;
+    bottom: 0;
+    height: 65%;
+    width: 40%;
+}
+
+.title_div {
+    padding: 33px 0 0 33px;
+}
+
+.main_tech {
+    padding: 33px 0 9px 33px;
+}
+
+.title_p,
+.tech_p {
+    font-family: 'Playfair Display', serif;
+    color: black;
+    letter-spacing: 0.5em;
+    font-size: 10px;
+    margin-bottom: 0px;
+}
+
+.project_name,
+.tech_name {
+    font-family: 'Francois One', sans-serif;
+    letter-spacing: 0.2em;
+    color: black;
+}
+
+.project_name {
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: 38px;
+}
+
+.tech_name {
+    font-size: 22px;
+}
+
+.view_site_btn {
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.5;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 22px;
+    margin-top: 22%;
+}
+
+.view_site_btn:hover {
+    opacity: 1;
+}
+
+
+
+/* contact.html */
+
+.contact_section {
+    display: flex;
+    width: 90%;
+    margin: 50px 0 50px 0;
+}
+
+
+.contact_left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.contact_contents {
+    width: 90%;
+}
+
+.contact_a {
+    display: flex;
+    margin-bottom: 10px;
+    border: 2px solid #f4f4f4;
+    padding: 12px;
+    width: 28%;
+    margin: auto;
+}
+
+.contact_p {
+    letter-spacing: 1.5px;
+    padding-right: 40px;
+}
+
+.contact_input {
+    border-style: none none solid none;
+    width: 90%;
+}
+
+
+.contact_right {
+    flex: 1;
+}
+
+
+.contact_button {
+    height: 100%;
+}
+
+
+.contact_btn {
+    text-align: center;
+    margin-right: 20px;
+}

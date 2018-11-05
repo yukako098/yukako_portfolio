@@ -1,0 +1,57 @@
+.section {
+    text-align: left;
+    font-size: 100%;
+    position: relative;
+}
+
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu li.active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu li.active a:hover {
+    color: #000;
+}
+
+#menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#menu li a,
+#menu li.active a {
+    padding: 2px 11px;
+    display: block;
+}
+
+#menu li.active a {
+    color: #fff;
+}
+
+#menu {
+    position: absolute;
+    top: 45%;
+    right: -9%;
+    height: 8%;
+    z-index: 3;
+    width: 26%;
+    padding: 0;
+    margin: 0;
+    transform: rotate(90deg);
+}
