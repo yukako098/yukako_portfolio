@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>Project</title>
     <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="viewport" content="width=device-width">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Francois+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
@@ -27,7 +27,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">01.</p>
                 </div>
-                <a href="index.html" class="sidebar_a">
+                <a href="#home" class="sidebar_a">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Top.</h4>
                             <p class="sidebar_description">- Back to Top page.</p>
@@ -38,7 +38,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">02.</p>
                 </div>
-                <a href="about.html" class="sidebar_a">
+                <a href="#about" class="sidebar_a">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">About.</h4>
                             <p class="sidebar_description">- INTRODUCE MYSELF.</p>
@@ -49,7 +49,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">03.</p>
                 </div>
-                <a href="project.html" class="sidebar_a">
+                <a href="#project" class="sidebar_a">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Project.</h4>
                             <p class="sidebar_description">- HERE'S WHAT'S BEEN DOING.</p>
@@ -60,7 +60,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">04.</p>
                 </div>
-                <a href="contact.html" class="sidebar_a">
+                <a href="#contact" class="sidebar_a">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Contact.</h4>
                             <p class="sidebar_description">- I'D LOVE TO HEAR FROM YOU.</p>
@@ -68,6 +68,12 @@
                 </a>
             </div>
         </div> <!-- sidebar_menus -->
+        <ul>
+            <li class="mb icon1"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="mb icon1"><a href="#"><i class="fab fa-github"></i></a></li>
+            <li class="mb icon1"><a href="#"><i class="fab fa-angellist"></i></a></li>
+            <li class="mb icon1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
     </div>
     <div id="main">
         <header class="header_container header_fullpage">
@@ -82,26 +88,26 @@
                         </a>
                         <p class="header_logo header_menu">MENU</p>
                     </li>
-                    <li class="icon1"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="icon1"><a href="#"><i class="fab fa-github"></i></a></li>
-                    <li class="icon1"><a href="#"><i class="fab fa-angellist"></i></a></li>
-                    <li class="icon1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="pc icon1"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="pc icon1"><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li class="pc icon1"><a href="#"><i class="fab fa-angellist"></i></a></li>
+                    <li class="pc icon1"><a href="#"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </nav>
         </header>
-        <ul id="menu">
-            <li data-menuanchor="page1" class="active"><a href="#page1" class="without_underbar"></a></li>
-            <li data-menuanchor="page2"><a href="#page2" class="without_underbar"></a></li>
-            <li data-menuanchor="page3"><a href="#page3" class="without_underbar"></a></li>
-            <li data-menuanchor="page4"><a href="#page4" class="without_underbar"></a></li>
-            <li data-menuanchor="page5"><a href="#page5" class="without_underbar"></a></li>
-            <li data-menuanchor="page6"><a href="#page6" class="without_underbar"></a></li>
+        <ul id="menu" class="brk">
+            <li data-menuanchor="page1" class="active"><a href="#home" class="without_underbar"></a></li>
+            <li data-menuanchor="page2"><a href="#about" class="without_underbar"></a></li>
+            <li data-menuanchor="page3"><a href="#project" class="without_underbar"></a></li>
+            <li data-menuanchor="page4"><a href="#project2" class="without_underbar"></a></li>
+            <li data-menuanchor="page5"><a href="#ptoject3" class="without_underbar"></a></li>
+            <li data-menuanchor="page6"><a href="#contact" class="without_underbar"></a></li>
         </ul>
         <footer class="footer_fullpage"></footer>
         <div id="fullpage">
             <section class="section page">
                 <div class="container">
-                    <section class="top_page_section">
+                    <section id="home" class="top_page_section">
                         <section class="main_section">
                             <h1>
                                 <p class="typewrite" data-period="2000" data-type='[ "Hello World.", "Yukako Sunabe." ]'>
@@ -114,18 +120,16 @@
             </section>
             <section class="section page">
                 <div class="container">
-                    <section class="top_page_section">
-                        <!-- <div class="about_section"> -->
+                    <section id="about" class="about_section top_page_section">
                         <div class="about_left">
                             <img src="img/about-me.jpg" alt="profile-picture" class="about_pic">
                         </div>
                         <div class="about_right">
-                            <div class="for_centerize">
+                            <div class="brk_point1-1 for_centerize">
                                 <div class="about_me">
-
                                     <p class="about_introduce">Front-end Developer</p>
                                     <h2 class="title_top">Yukako Sunabe</h2>
-                                    <p class="about_introduce"> Hello! I am currently a student in
+                                    <p class="mb_intro about_introduce"> Hello! I am currently a student in
                                         Vancouver. I'm passionate about
                                         learning new
                                         things
@@ -140,12 +144,54 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <!-- </div> -->
                     </section>
                 </div>
             </section>
-            <section class="section page">
+            <section id="project" class="section page">
+                <div class="container">
+                    <div class="bigger_rectangle"></div>
+                    <div class="smaller_rectangle">
+                        <div class="title_div">
+                            <p class="title_p">TITLE</p>
+                            <h3 class="project_name">PROJECT NAME</h3>
+                        </div>
+                        <div class="main_tech">
+                            <p class="tech_p">MAIN TECH</p>
+                            <ul class="tech_name">
+                                <li>React.js</li>
+                                <li>Redux</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </div>
+                        <button class="view_site_btn">
+                            Hover over me
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="project2" class="section page">
+                <div class="container">
+                    <div class="bigger_rectangle"></div>
+                    <div class="smaller_rectangle">
+                        <div class="title_div">
+                            <p class="title_p">TITLE</p>
+                            <h3 class="project_name">PROJECT NAME</h3>
+                        </div>
+                        <div class="main_tech">
+                            <p class="tech_p">MAIN TECH</p>
+                            <ul class="tech_name">
+                                <li>React.js</li>
+                                <li>Redux</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </div>
+                        <button class="view_site_btn">
+                            Hover over me
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="project3" class="section page">
                 <div class="container">
                     <div class="bigger_rectangle"></div>
                     <div class="smaller_rectangle">
@@ -169,56 +215,13 @@
             </section>
             <section class="section page">
                 <div class="container">
-                    <div class="bigger_rectangle"></div>
-                    <div class="smaller_rectangle">
-                        <div class="title_div">
-                            <p class="title_p">TITLE</p>
-                            <h3 class="project_name">PROJECT NAME</h3>
-                        </div>
-                        <div class="main_tech">
-                            <p class="tech_p">MAIN TECH</p>
-                            <ul class="tech_name">
-                                <li>React.js</li>
-                                <li>Redux</li>
-                                <li>Firebase</li>
-                            </ul>
-                        </div>
-                        <button class="view_site_btn">
-                            Hover over me
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="section page">
-                <div class="container">
-                    <div class="bigger_rectangle"></div>
-                    <div class="smaller_rectangle">
-                        <div class="title_div">
-                            <p class="title_p">TITLE</p>
-                            <h3 class="project_name">PROJECT NAME</h3>
-                        </div>
-                        <div class="main_tech">
-                            <p class="tech_p">MAIN TECH</p>
-                            <ul class="tech_name">
-                                <li>React.js</li>
-                                <li>Redux</li>
-                                <li>Firebase</li>
-                            </ul>
-                        </div>
-                        <button class="view_site_btn">
-                            Hover over me
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="section page">
-                <div class="container">
-                    <section class="top_page_section">
+                    <section id="contact" class="top_page_section">
                         <div class="contact_section">
                             <div class="contact_left">
                                 <div class="for_centerize">
                                     <div class="contact_title_contents">
-                                        <h1 class="contact_title">CONTACT</h1>
+                                        <h1 class="dis_none contact_title">Get In Touch</h1>
+                                        <h1 class="tab contact_title">Contact</h1>
                                         <p class="contact_p">Thank you for visiting. I hope you enjoyed this trip. Feel
                                             free to
                                             drop me a line, just say hi and let me know you. You can also download my
