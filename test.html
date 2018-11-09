@@ -18,16 +18,13 @@
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <!-- <div class="sidebar_header">
-            <div class="cancel" onclick="closeNav()">&times;</div>
-        </div> -->
         <div class="cancel" onclick="closeNav()">&times;</div>
         <div class="sidebar_menus">
             <div class="sidebar_menu">
                 <div class="sidebar_num">
                     <p class="num_rotate">01.</p>
                 </div>
-                <a href="#home" class="sidebar_a">
+                <a href="#home" class="sidebar_a" onclick="closeNav(), pageChange(0)">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Top.</h4>
                             <p class="sidebar_description">- Back to Top page.</p>
@@ -38,7 +35,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">02.</p>
                 </div>
-                <a href="#about" class="sidebar_a">
+                <a href="#about" class="sidebar_a" onclick="closeNav(), pageChange(1)">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">About.</h4>
                             <p class="sidebar_description">- INTRODUCE MYSELF.</p>
@@ -49,7 +46,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">03.</p>
                 </div>
-                <a href="#project" class="sidebar_a">
+                <a href="#project" class="sidebar_a" onclick="closeNav(), pageChange(2)">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Project.</h4>
                             <p class="sidebar_description">- HERE'S WHAT'S BEEN DOING.</p>
@@ -60,7 +57,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">04.</p>
                 </div>
-                <a href="#contact" class="sidebar_a">
+                <a href="#contact" class="sidebar_a" onclick="closeNav(), pageChange(3)">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Contact.</h4>
                             <p class="sidebar_description">- I'D LOVE TO HEAR FROM YOU.</p>
@@ -98,16 +95,16 @@
         <ul id="menu" class="brk">
             <li data-menuanchor="page1" class="active"><a href="#home" class="without_underbar"></a></li>
             <li data-menuanchor="page2"><a href="#about" class="without_underbar"></a></li>
-            <li data-menuanchor="page3"><a href="#project" class="without_underbar"></a></li>
+            <li data-menuanchor="page3" ><a href="#project" class="without_underbar"></a></li>
             <li data-menuanchor="page4"><a href="#project2" class="without_underbar"></a></li>
             <li data-menuanchor="page5"><a href="#ptoject3" class="without_underbar"></a></li>
             <li data-menuanchor="page6"><a href="#contact" class="without_underbar"></a></li>
         </ul>
         <footer class="footer_fullpage"></footer>
         <div id="fullpage">
-            <section class="section page">
+            <section id="home"class="section page">
                 <div class="container">
-                    <section id="home" class="top_page_section">
+                    <section class="top_page_section">
                         <section class="main_section">
                             <h1>
                                 <p class="typewrite" data-period="2000" data-type='[ "Hello World.", "Yukako Sunabe." ]'>
@@ -118,9 +115,9 @@
                     </section>
                 </div>
             </section>
-            <section class="section page">
+            <section id="about"class="section page">
                 <div class="container">
-                    <section id="about" class="about_section top_page_section">
+                    <section class="about_section top_page_section">
                         <div class="about_left">
                             <img src="img/about-me.jpg" alt="profile-picture" class="about_pic">
                         </div>
@@ -213,9 +210,9 @@
                     </div>
                 </div>
             </section>
-            <section class="section page">
+            <section id="contact"  class="section page">
                 <div class="container">
-                    <section id="contact" class="top_page_section">
+                    <section class="top_page_section">
                         <div class="contact_section">
                             <div class="contact_left">
                                 <div class="for_centerize">
@@ -233,7 +230,7 @@
                                     <a download href="img/YukakoSunabe_Resume.pdf" class="contact_btn without_underbar">RESUME
                                         DOWNLOAD</a>
                                     <!-- <div class="contact_button">
-                                        <a href="mailto:yukakosunabe@gmail.com" class="contact_btn">SEND MESSAGE</a> 
+                                        <a href="mailto:yukakosunabe@gmail.com" class="contact_btn">SEND MESSAGE</a>
                                         <a download href="img/YukakoSunabe_Resume.pdf" class="contact_btn">DOWNLOAD</a>
 </div>-->
                                 </div>
