@@ -156,28 +156,6 @@ a:hover::after {
     display: block;
     position: relative;
   }
-
-  .about_left {
-    /* width: 100%; */
-    margin-right: 0;
-  }
-
-  .about_right {
-    /* display: flex; */
-    text-align: right;
-    position: initial;
-  }
-
-  .for_centerize {
-    display: flex;
-  }
-
-  .about_me {
-    width: 41%;
-    position: absolute;
-    top: 20%;
-    right: 0;
-  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -443,10 +421,23 @@ header ul li a {
 
   .about_me {
     margin-bottom: 0.8em !important;
+    width: 41%;
+    position: absolute;
+    top: 20%;
+    right: 0;
   }
 
   .mb_intro {
     margin-top: 1.2em !important;
+  }
+
+  .about_right {
+    text-align: right;
+    position: initial;
+  }
+
+  .for_centerize {
+    display: flex;
   }
 }
 
