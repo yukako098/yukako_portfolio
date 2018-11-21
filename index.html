@@ -18,7 +18,7 @@
 <body>
     <div id="mySidenav" class="sidenav">
         <div class="cancel" onclick="closeNav()">&times;</div>
-        <div class="sidebar_menus">
+        <div class="sidebar_menus centralize">
             <div class="sidebar_menu">
                 <div class="sidebar_num">
                     <p class="num_rotate">01.</p>
@@ -99,7 +99,7 @@
             <section id="home"class="section page">
                 <div class="container">
                     <section class="top_page_section">
-                        <section class="main_section">
+                        <section class="main_section centralize">
                             <h1>
                                 <p class="typewrite" data-period="2000" data-type='[ "Hello World.", "I am Yukako" ]'>
                                     <span class="wrap"></span>
@@ -116,7 +116,7 @@
                             <img src="img/about-me.jpg" alt="profile-picture" class="about_pic">
                         </div>
                         <div class="about_right">
-                            <div class="brk_point1-1 for_centerize">
+                            <div class="brk_point1-1 centralize my_info">
                                 <div class="about_me">
                                     <p class="about_introduce">Front-end Developer</p>
                                     <h2 class="title_top">Yukako Sunabe</h2>
@@ -144,7 +144,7 @@
                     <div class="smaller_rectangle">
                         <div class="title_div">
                             <p class="title_p">TITLE</p>
-                            <h3 class="project_name">PROJECT NAME</h3>
+                            <h3 class="project_name">Granma's Blood Pressure</h3>
                         </div>
                         <div class="main_tech">
                             <p class="tech_p">MAIN TECH</p>
@@ -166,14 +166,14 @@
                     <div class="smaller_rectangle">
                         <div class="title_div">
                             <p class="title_p">TITLE</p>
-                            <h3 class="project_name">PROJECT NAME</h3>
+                            <h3 class="project_name">Dulce Vicio</h3>
                         </div>
                         <div class="main_tech">
                             <p class="tech_p">MAIN TECH</p>
                             <ul class="tech_name">
-                                <li>React.js</li>
-                                <li>Redux</li>
-                                <li>Firebase</li>
+                                <li>WordPress</li>
+                                <li>Bootstrap</li>
+                                <!-- <li>Firebase</li> -->
                             </ul>
                         </div>
                         <button class="view_site_btn">
@@ -188,14 +188,14 @@
                     <div class="smaller_rectangle">
                         <div class="title_div">
                             <p class="title_p">TITLE</p>
-                            <h3 class="project_name">PROJECT NAME</h3>
+                            <h3 class="project_name">Portfolio</h3>
                         </div>
                         <div class="main_tech">
                             <p class="tech_p">MAIN TECH</p>
                             <ul class="tech_name">
-                                <li>React.js</li>
-                                <li>Redux</li>
-                                <li>Firebase</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
                             </ul>
                         </div>
                         <button class="view_site_btn">
@@ -206,21 +206,16 @@
             </section>
             <section id="contact" class="section page">
                 <div class="container contact_container">
-                    <div class="centralize">
-                        <div class="contact_top">
+                        <div class="contact_left">
                             <h1 class="contact_title">Contact<br />Resume</h1>
-                            <div class="contact_main_img">
-                                <img src="./img/contact.jpg" alt="" class="contact_img" />
-                            </div>
-                        </div>
-                        <div class="contact_bottom">
-                            <div class="info_left">
+                            <img src="./img/contact.jpg" alt="" class="contact_img" />
+                            <div class="contact_details">
                                 <p class="comment">
                                     Thank you for visiting. I hope you enjoyed this trip. Feel free
                                     to drop me a line. You can also download my resume from button
-                                    bellow.
-                                 </p>
-                                <ul class="info_left_ul">
+                                    bellow and check my works on github account.
+                                </p>
+                                <ul class="contact_details_ul">
                                     <li><button class="toDL">Download</button></li>
                                     <li class="icon">
                                         <a href="https://www.linkedin.com/in/yukako-sunabe/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -230,23 +225,23 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="info_right">
-                                <h5 class="info_right_title">Drop me a line!</h5>
-                                <form action="">
-                                    <div class="name_email">
-                                        <label for="name">Name </label>
-                                        <input type="text" placeholder="Your name.." />
-                                        <label for="email">Email </label>
-                                        <input type="email" placeholder="Your mail.." />
-                                    </div>
+                        </div>
+                        <div class="contact_right">
+                            <div class="user_info">
+                                <form action="" class="contact_form">
+                                    <label for="name">Name </label>
+                                    <br>
+                                    <input type="text" placeholder="Your name.." class="input"/>
+                                    <label for="email">Email </label>
+                                    <br>
+                                    <input type="email" placeholder="Your mail.." class="input"/>
                                     <label for="message">Message</label>
-                                    <textarea placeholder="Your message"></textarea>
+                                    <br>
+                                    <textarea placeholder="Your message" class="message"></textarea>
                                 </form>
-                                <input type="submit" value="Submit" />
+                                <input type="submit" value="Submit" class="send_btn"/>
                             </div>
                         </div>
-                    </div>
-                    <!-- ↑centralize -->
                 </div>
             </section>
         </div>

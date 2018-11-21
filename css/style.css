@@ -57,21 +57,11 @@ a:hover::after {
   height: 0;
 }
 
-.sidebar_a::after {
+.centralize {
   position: absolute;
-  bottom: -8px;
-  left: 0px;
-  content: "";
-  width: 35%;
-  height: 2px;
-  background: #f4f4f4;
-  transform: scale(0, 1);
-  transform-origin: left top;
-  transition: transform 0.3s;
-}
-
-.sidebar_a:hover::after {
-  transform: scale(1.5, 1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #main {
@@ -139,16 +129,6 @@ a:hover::after {
   .sidebar_menus {
     width: 28% !important;
   }
-
-  .sidenav ul {
-    display: flex;
-    margin-top: 1.5em;
-    position: absolute;
-    bottom: 10%;
-    width: 50%;
-    left: 26%;
-  }
-
   .header_logo {
     display: none;
   }
@@ -218,6 +198,23 @@ header ul li a {
 
 /* sidebar css */
 
+.sidebar_a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0px;
+  content: "";
+  width: 35%;
+  height: 2px;
+  background: #f4f4f4;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+
+.sidebar_a:hover::after {
+  transform: scale(1.5, 1);
+}
+
 .sidenav {
   display: none;
   height: 100%;
@@ -258,18 +255,21 @@ header ul li a {
 }
 
 .sidebar_menus {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   width: 13%;
 }
 
 @media (max-width: 480px) {
   .sidebar_menus {
     width: 28%;
+  }
+
+  .sidenav ul {
+    display: flex;
+    margin-top: 1.5em;
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    left: 26%;
   }
 }
 
@@ -342,12 +342,6 @@ header ul li a {
 }
 
 .main_section {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
 }
@@ -442,18 +436,9 @@ header ul li a {
     position: initial;
   }
 
-  .for_centerize {
+  .my_info {
     display: flex;
   }
-}
-
-.title_top,
-.contact_title {
-  font-size: 4em;
-  letter-spacing: 4px;
-  margin-bottom: 5%;
-  margin-top: 0px;
-  font-weight: lighter;
 }
 
 @media (max-width: 960px) {
@@ -462,17 +447,26 @@ header ul li a {
   }
 }
 
+@media (max-width: 850px) {
+  .title_bottom {
+    font-size: 1em !important;
+  }
+}
+
+.title_top,
+.contact_title {
+  font-size: 4em;
+  letter-spacing: 4px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: lighter;
+}
+
 .title_bottom {
   font-size: 2em;
   letter-spacing: 5px;
   margin-top: 0px;
   margin-bottom: 2%;
-}
-
-@media (max-width: 850px) {
-  .title_bottom {
-    font-size: 1em !important;
-  }
 }
 
 .about_section {
@@ -509,13 +503,7 @@ header ul li a {
   position: relative;
 }
 
-.for_centerize {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.my_info {
   width: 100%;
 }
 
@@ -537,56 +525,11 @@ header ul li a {
 }
 
 /* project.html */
-.header_fullpage {
-  top: 0;
-  /* padding-bottom: 1.5em;
-  padding-top: 2.5em; */
-}
-
-.footer_fullpage,
-.header_fullpage {
-  background: #272725;
-  width: 80%;
-  z-index: 2;
-  position: fixed;
-}
-
-.footer_fullpage {
-  position: fixed;
-  bottom: 0;
-  height: 5%;
-}
-
-.container {
-  padding-top: 5em;
-  height: 83%;
-}
-
 .bigger_rectangle {
   background-color: yellow;
   width: 72%;
   height: 78%;
 }
-
-@media (max-width: 740px) {
-  .bigger_rectangle {
-    width: 100% !important;
-  }
-
-  .smaller_rectangle {
-    left: 0 !important;
-    top: 45% !important;
-    width: 100% !important;
-  }
-
-  .view_site_btn {
-    margin-top: 8% !important;
-  }
-}
-
-@media (max-width: 480px) {
-}
-
 .smaller_rectangle {
   background-color: white;
   position: absolute;
@@ -656,6 +599,25 @@ header ul li a {
   opacity: 1;
 }
 
+@media (max-width: 740px) {
+  .bigger_rectangle {
+    width: 100% !important;
+  }
+
+  .smaller_rectangle {
+    left: 0 !important;
+    top: 45% !important;
+    width: 100% !important;
+  }
+
+  .view_site_btn {
+    margin-top: 8% !important;
+  }
+}
+
+@media (max-width: 480px) {
+}
+
 /* contact.html */
 
 .contact_section {
@@ -663,38 +625,36 @@ header ul li a {
   width: 100%;
 }
 
-.centralize {
-  height: 100%;
-}
-.contact_top {
-  height: 50%;
-  position: relative;
+.contact_container {
   display: flex;
+}
+
+.contact_left,
+.contact_right {
+  width: 50%;
+}
+
+.contact_left {
+  position: relative;
 }
 
 .contact_title {
   position: absolute;
   top: 20%;
-  left: 15%;
   z-index: 3;
 }
 
-.contact_main_img {
-  position: absolute;
-  width: 50%;
-  left: 28%;
-}
-
 .contact_img {
-  width: 100%;
   opacity: 0.5;
+  right: 0;
+  width: 85%;
+  position: absolute;
 }
 
 .comment {
   font-family: "abril-display";
   font-size: 0.8em;
-  width: 75%;
-  margin-bottom: 15%;
+  margin: 10% 0;
 }
 .contact_left {
   position: relative;
@@ -702,48 +662,42 @@ header ul li a {
   margin-right: 1em;
 }
 
-.contact_bottom {
+.contact_right {
   display: flex;
-  padding-left: 15%;
+  padding-left: 5%;
 }
 
-/* .contact_title_contents {
-  margin-bottom: 3em;
-} */
-.info_left {
-  width: 50%;
-}
-.contact_a {
-  display: flex;
-  margin-bottom: 10px;
-  border: 2px solid #f4f4f4;
-  padding: 12px;
-  width: 28%;
-  margin: auto;
+.contact_details {
+  position: absolute;
+  margin: 5% 0;
+  top: 50%;
+  width: 100%;
 }
 
-.contact_p,
-.contact_btn {
-  width: 90%;
+.contact_details_ul {
+  margin: 1em 0;
 }
 
-.contact_p {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: "Francois One", sans-serif;
+.user_info {
+  width: 100%;
 }
 
-.contact_input {
-  border-style: none none solid none;
-  width: 90%;
+.contact_form {
+  padding: 5%;
+  border: 2px solid white;
+  background-color: #565652;
+  height: 75%;
+}
+
+.send_btn {
+  float: right;
+  margin-top: 5%;
+  width: 30%;
+  height: 10%;
 }
 
 .contact_right {
   flex: 1;
-}
-
-.contact_button {
-  height: 100%;
 }
 
 .toDL {
@@ -763,13 +717,35 @@ header ul li a {
   cursor: pointer;
 }
 
+.input,
+.message {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: #565652;
+}
+
+.input {
+  border-bottom: 2px solid white;
+  height: 12%;
+  width: 100%;
+  margin-bottom: 3%;
+}
+
+input:focus {
+  border: solid 1px #eea34a;
+}
+
+.message {
+  border: 2px solid white;
+  margin: 3% 0;
+  height: 50%;
+  width: 100%;
+}
+
 .icon {
   margin-top: 5%;
   margin-right: 5%;
   float: left;
-}
-input:focus {
-  border: solid 1px #eea34a;
 }
 
 @media (max-width: 480px) {
