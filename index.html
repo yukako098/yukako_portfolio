@@ -25,7 +25,7 @@
                 </div>
                 <a href="#home" class="sidebar_a" onclick="closeNav(), pageChange(0)">
                     <div class="sidebar_menu_num">
-                        <h3 class="sidebar_title">Top.</h4>
+                        <h3 class="sidebar_title">Top</h4>
                             <p class="sidebar_description">- Back to Top page.</p>
                     </div>
                 </a>
@@ -36,7 +36,7 @@
                 </div>
                 <a href="#about" class="sidebar_a" onclick="closeNav(), pageChange(1)">
                     <div class="sidebar_menu_num">
-                        <h3 class="sidebar_title">About.</h4>
+                        <h3 class="sidebar_title">About</h4>
                             <p class="sidebar_description">- INTRODUCE MYSELF.</p>
                     </div>
                 </a>
@@ -47,7 +47,7 @@
                 </div>
                 <a href="#project" class="sidebar_a" onclick="closeNav(), pageChange(2)">
                     <div class="sidebar_menu_num">
-                        <h3 class="sidebar_title">Project.</h4>
+                        <h3 class="sidebar_title">Project</h4>
                             <p class="sidebar_description">- HERE'S WHAT'S BEEN DOING.</p>
                     </div>
                 </a>
@@ -58,36 +58,31 @@
                 </div>
                 <a href="#contact" class="sidebar_a" onclick="closeNav(), pageChange(3)">
                     <div class="sidebar_menu_num">
-                        <h3 class="sidebar_title">Contact.</h4>
+                        <h3 class="sidebar_title">Contact</h4>
                             <p class="sidebar_description">- I'D LOVE TO HEAR FROM YOU.</p>
                     </div>
                 </a>
             </div>
         </div> <!-- sidebar_menus -->
-        <ul>
-            <li class="mb icon1"><a href="https://www.linkedin.com/in/yukako-sunabe/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li class="mb icon1"><a href="https://github.com/yukako098" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li class="mb icon1"><a href="https://angel.co/yukako-sunabe" target="_blank"><i class="fab fa-angellist"></i></a></li>
-            <li class="mb icon1"><a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        </ul>
     </div>
     <div id="main">
         <header class="header_container header_fullpage">
             <nav>
                 <ul>
                     <li class="top_page">
-                        <span class="header_logo" onclick="openNav()">Y</span>
+                        <span class="header_logo" ><a href="#home" class="top_logo without_underbar">Y</a></span>
+
+                    </li>
+                    <li class="to_sidenav">
                         <a href="#" class="nav without_underbar" onclick="openNav()">
                             <div class="one"></div>
                             <div class="two"></div>
                             <div class="three"></div>
                         </a>
+                    </li>
+                    <li class="to_sidenav" onclick="openNav()">
                         <p class="header_logo header_menu">MENU</p>
                     </li>
-                    <li class="pc icon1"><a href="https://www.linkedin.com/in/yukako-sunabe/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="pc icon1"><a href="https://github.com/yukako098" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li class="pc icon1"><a href="https://angel.co/yukako-sunabe" target="_blank"><i class="fab fa-angellist"></i></a></li>
-                    <li class="pc icon1"><a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -133,9 +128,9 @@
                                     </p>
                                 </div>
                                 <div class="about_skills">
-                                    <h2 class="title_bottom">Skills:</h2>
+                                    <h2 class="title_bottom">Skills</h2>
                                     <p class="about_introduce"> HTML5 / CSS3 / Javascript / Reactjs / Firebase /
-                                        MySQL / JSON / Git / WordPress / Bootstrap / WebAPI /
+                                         Git / WordPress / Bootstrap / Photoshop / Illustrator / Sass / Gulp /
                                         Responsive Design /
                                     </p>
                                 </div>
@@ -209,33 +204,49 @@
                     </div>
                 </div>
             </section>
-            <section id="contact"  class="section page">
-                <div class="container">
-                    <section class="top_page_section">
-                        <div class="contact_section">
-                            <div class="contact_left">
-                                <div class="for_centerize">
-                                    <div class="contact_title_contents">
-                                        <h1 class="dis_none contact_title">Get In Touch</h1>
-                                        <h1 class="tab contact_title">Contact</h1>
-                                        <p class="contact_p">Thank you for visiting. I hope you enjoyed this trip. Feel
-                                            free to
-                                            drop me a line, just say hi and let me know you. You can also download my
-                                            resume from
-                                            button bellow. </p>
-
-
-                                    </div>
-                                    <a download href="img/YukakoSunabe_Resume.pdf" class="contact_btn without_underbar">RESUME
-                                        DOWNLOAD</a>
-
-                                </div>
-                            </div>
-                            <div class="contact_right">
-                                <img src="img/contact.jpg" alt="contact-picture" class="contact_pic">
+            <section id="contact" class="section page">
+                <div class="container contact_container">
+                    <div class="centralize">
+                        <div class="contact_top">
+                            <h1 class="contact_title">Contact<br />Resume</h1>
+                            <div class="contact_main_img">
+                                <img src="./img/contact.jpg" alt="" class="contact_img" />
                             </div>
                         </div>
-                    </section>
+                        <div class="contact_bottom">
+                            <div class="info_left">
+                                <p class="comment">
+                                    Thank you for visiting. I hope you enjoyed this trip. Feel free
+                                    to drop me a line. You can also download my resume from button
+                                    bellow.
+                                 </p>
+                                <ul class="info_left_ul">
+                                    <li><button class="toDL">Download</button></li>
+                                    <li class="icon">
+                                        <a href="https://www.linkedin.com/in/yukako-sunabe/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li class="icon">
+                                        <a href="https://github.com/yukako098" target="_blank"><i class="fab fa-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="info_right">
+                                <h5 class="info_right_title">Drop me a line!</h5>
+                                <form action="">
+                                    <div class="name_email">
+                                        <label for="name">Name </label>
+                                        <input type="text" placeholder="Your name.." />
+                                        <label for="email">Email </label>
+                                        <input type="email" placeholder="Your mail.." />
+                                    </div>
+                                    <label for="message">Message</label>
+                                    <textarea placeholder="Your message"></textarea>
+                                </form>
+                                <input type="submit" value="Submit" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ↑centralize -->
                 </div>
             </section>
         </div>
