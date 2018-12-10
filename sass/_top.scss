@@ -1,0 +1,23 @@
+.container {
+  padding: 5rem;
+}
+
+.top_page {
+  margin-right: auto;
+}
+
+.top_page_section {
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.main_section {
+  width: 100%;
+  text-align: center;
+  @include centralize;
+}
+
+.typewrite {
+  font-size: 100px;
+}

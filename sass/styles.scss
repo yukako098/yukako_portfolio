@@ -1,0 +1,23 @@
+@import "reset";
+@import "variable", "mixins";
+
+// BASIC CSS
+@import "basic";
+
+// SIDE NAV CSS
+@import "sidenav";
+
+// HEADER CSS
+@import "header";
+
+// 1ST SECTION (HELLO WORLD)
+@import "top";
+
+// 2ND SECTION (ABOUT ME)
+@import "about";
+
+// 3RD, 4TH, AND 5TH SECTION (PROJECTS)
+@import "project";
+
+// 6TH SECTION (CONTACT)
+@import "contact";

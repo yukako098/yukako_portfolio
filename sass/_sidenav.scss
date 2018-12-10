@@ -1,0 +1,93 @@
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: $dark;
+  overflow-x: hidden;
+  transition: 0.5s;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: $fontBasic;
+
+  .cancel {
+    position: absolute;
+    top: 6.5%;
+    left: 88%;
+    font-size: $fontMid;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+  a {
+    padding: 0px;
+    font-size: $fontMid;
+    color: $gray;
+    display: block;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.sidebar_menus {
+  width: 17%;
+  @include centralize;
+
+  .sidebar_a {
+    &:hover::after {
+      transform: scale(1.5, 1);
+    }
+    &::after {
+      position: absolute;
+      bottom: -8px;
+      left: 0px;
+      content: "";
+      width: 35%;
+      height: 2px;
+      background: $white;
+      transform: scale(0, 1);
+      transform-origin: left top;
+      transition: transform 0.3s;
+    }
+  }
+
+  .sidebar_menu {
+    display: flex;
+  }
+
+  .sidebar_menu + .sidebar_menu {
+    margin-top: $fontMid;
+  }
+
+  .sidebar_menu_num {
+    display: inline-block;
+    padding: 0;
+  }
+
+  .num_rotate {
+    transform: rotate(270deg);
+    font-size: $fontSmal;
+    margin: 0px;
+  }
+
+  .sidebar_title {
+    margin: 0px;
+    padding-bottom: 6px;
+    font-size: $fontMid;
+  }
+
+  .sidebar_description {
+    text-align: left;
+    margin: 0px;
+    font-size: $fontBasic;
+    font-weight: bold;
+    font-family: $francois;
+  }
+}

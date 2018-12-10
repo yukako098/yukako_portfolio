@@ -5,12 +5,12 @@
     <title>Project</title>
     <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Francois+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/fullpage-style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <script type="text/javascript" src="./js/delighters.js"></script>
     <script src="./js/script.js"></script>
 </head>
 
@@ -18,7 +18,7 @@
 <body>
     <div id="mySidenav" class="sidenav">
         <div class="cancel" onclick="closeNav()">&times;</div>
-        <div class="sidebar_menus centralize">
+        <div class="sidebar_menus">
             <div class="sidebar_menu">
                 <div class="sidebar_num">
                     <p class="num_rotate">01.</p>
@@ -70,11 +70,11 @@
             <nav>
                 <ul>
                     <li class="top_page">
-                        <span class="header_logo" ><a href="#home" class="top_logo without_underbar">Y</a></span>
+                        <span class="header_logo" ><a href="#home">Y</a></span>
 
                     </li>
                     <li class="to_sidenav">
-                        <a href="#" class="nav without_underbar" onclick="openNav()">
+                        <a href="#" class="nav" onclick="openNav()">
                             <div class="one"></div>
                             <div class="two"></div>
                             <div class="three"></div>
@@ -94,12 +94,13 @@
             <li data-menuanchor="page5"><a href="#ptoject3" class="without_underbar"></a></li>
             <li data-menuanchor="page6"><a href="#contact" class="without_underbar"></a></li>
         </ul>
-        <footer class="footer_fullpage"></footer>
+        <!-- <footer class="footer_fullpage"></footer> -->
+
         <div id="fullpage">
             <section id="home"class="section page">
                 <div class="container">
                     <section class="top_page_section">
-                        <section class="main_section centralize">
+                        <section class="main_section">
                             <h1>
                                 <p class="typewrite" data-period="2000" data-type='[ "Hello World.", "I am Yukako" ]'>
                                     <span class="wrap"></span>
@@ -110,17 +111,27 @@
                 </div>
             </section>
             <section id="about"class="section page">
+                <video playsinline autoplay muted loop>
+                    <source src="./img/test_video.mp4" type="video/mp4">
+                    <source src="./img/test_video2.mp4" type="video/mp4">
+                </video>
                 <div class="container">
-                    <section class="about_section top_page_section">
+                    <section class="about_section">
                         <div class="about_left">
-                            <img src="img/about-me.jpg" alt="profile-picture" class="about_pic">
+                            <div class="mask_landscape">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            </div>
                         </div>
                         <div class="about_right">
-                            <div class="brk_point1-1 centralize my_info">
+                            <div class=" my_info">
                                 <div class="about_me">
-                                    <p class="about_introduce">Front-end Developer</p>
-                                    <h2 class="title_top">Yukako Sunabe</h2>
-                                    <p class="mb_intro about_introduce"> Hello! I am currently a student in
+                                    <p>Front-end Developer</p>
+                                    <h2>Yukako Sunabe</h2>
+                                    <p> Hello! I am currently a student in
                                         Vancouver. I'm passionate about
                                         learning new
                                         things
@@ -128,27 +139,29 @@
                                     </p>
                                 </div>
                                 <div class="about_skills">
-                                    <h2 class="title_bottom">Skills</h2>
-                                    <p class="about_introduce"> HTML5 / CSS3 / Javascript / Reactjs / Firebase /
+                                    <h3>Skills</h3>
+                                    <p> HTML5 / CSS3 / Javascript / Reactjs / Firebase /
                                          Git / WordPress / Bootstrap / Photoshop / Illustrator / Sass / Gulp /
                                         Responsive Design /
                                     </p>
                                 </div>
                             </div>
+
                     </section>
+
                 </div>
             </section>
             <section id="project" class="section page">
                 <div class="container">
-                    <div class="bigger_rectangle"></div>
+                    <div class="blood_pressure"></div>
                     <div class="smaller_rectangle">
-                        <div class="title_div">
-                            <p class="title_p">TITLE</p>
-                            <h3 class="project_name">Granma's Blood Pressure</h3>
+                        <div class="title_div" data-delighter>
+                            <p>TITLE</p>
+                            <h3>Granma's Blood Pressure</h3>
                         </div>
                         <div class="main_tech">
-                            <p class="tech_p">MAIN TECH</p>
-                            <ul class="tech_name">
+                            <p>MAIN TECH</p>
+                            <ul>
                                 <li>React.js</li>
                                 <li>Redux</li>
                                 <li>Firebase</li>
@@ -162,17 +175,19 @@
             </section>
             <section id="project2" class="section page">
                 <div class="container">
-                    <div class="bigger_rectangle"></div>
+                    <div class="dulce_vicio"></div>
                     <div class="smaller_rectangle">
                         <div class="title_div">
-                            <p class="title_p">TITLE</p>
-                            <h3 class="project_name">Dulce Vicio</h3>
+                            <p>TITLE</p>
+                            <h3>Dulce Vicio</h3>
                         </div>
                         <div class="main_tech">
-                            <p class="tech_p">MAIN TECH</p>
-                            <ul class="tech_name">
-                                <li>WordPress</li>
+                            <p>MAIN TECH</p>
+                            <ul>
+                                <li>HTML</li>
                                 <li>Bootstrap</li>
+                                <li>SASS</li>
+                                <li>JavaScript</li>
                                 <!-- <li>Firebase</li> -->
                             </ul>
                         </div>
@@ -184,17 +199,17 @@
             </section>
             <section id="project3" class="section page">
                 <div class="container">
-                    <div class="bigger_rectangle"></div>
+                    <div class="blog_project"></div>
                     <div class="smaller_rectangle">
                         <div class="title_div">
-                            <p class="title_p">TITLE</p>
-                            <h3 class="project_name">Portfolio</h3>
+                            <p>TITLE</p>
+                            <h3>Dulce Vicio's Blog</h3>
                         </div>
                         <div class="main_tech">
-                            <p class="tech_p">MAIN TECH</p>
-                            <ul class="tech_name">
-                                <li>HTML</li>
-                                <li>CSS</li>
+                            <p>MAIN TECH</p>
+                            <ul>
+                                <li>WordPress</li>
+                                <li>Bootstrap</li>
                                 <li>JavaScript</li>
                             </ul>
                         </div>
@@ -207,40 +222,27 @@
             <section id="contact" class="section page">
                 <div class="container contact_container">
                         <div class="contact_left">
-                            <h1 class="contact_title">Contact<br />Resume</h1>
-                            <img src="./img/contact.jpg" alt="" class="contact_img" />
+                            <h1>Contact<br />Resume</h1>
+
                             <div class="contact_details">
-                                <p class="comment">
+                                <p>
                                     Thank you for visiting. I hope you enjoyed this trip. Feel free
                                     to drop me a line. You can also download my resume from button
                                     bellow and check my works on github account.
                                 </p>
-                                <ul class="contact_details_ul">
-                                    <li><button class="toDL">Download</button></li>
-                                    <li class="icon">
+                                <ul>
+                                    <li><button>Download</button></li>
+                                    <li>
                                         <a href="https://www.linkedin.com/in/yukako-sunabe/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
-                                    <li class="icon">
+                                    <li>
                                         <a href="https://github.com/yukako098" target="_blank"><i class="fab fa-github"></i></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="contact_right">
-                            <div class="user_info">
-                                <form action="" class="contact_form">
-                                    <label for="name">Name </label>
-                                    <br>
-                                    <input type="text" placeholder="Your name.." class="input"/>
-                                    <label for="email">Email </label>
-                                    <br>
-                                    <input type="email" placeholder="Your mail.." class="input"/>
-                                    <label for="message">Message</label>
-                                    <br>
-                                    <textarea placeholder="Your message" class="message"></textarea>
-                                </form>
-                                <input type="submit" value="Submit" class="send_btn"/>
-                            </div>
+                            <img src="./img/contact.jpg" alt="contact image">
                         </div>
                 </div>
             </section>
@@ -260,6 +262,41 @@
                 showActiveTooltip: false,
                 slidesNavigation: false,
                 slidesNavPosition: 'bottom',
+                 loopBottom: true,
+                 paddingBottom: '50px',
+                // Design
+                sectionsColor: ['#fedc3d', '#01abaa', '#fea680', '#57bc90', '#f7882f', '#ffffff'],
+
+                onLeave:function(anchorLink, index){
+                    if (index == 1) {
+                        $(".header_fullpage").css("background-color", "#fedc3d");
+                        ("animation", "example 1s ease 2s 1 forwards;");
+                    }
+                    if (index == 2) {
+                        $(".header_fullpage").css("background-color", "#01abaa");
+                        ("animation", "example 1s ease 2s 1 forwards;");
+                    }
+                    if (index == 3) {
+                        $(".header_fullpage").css("background-color", "#fea680");
+                        ("animation-duration", "2s");
+                    }
+                    if (index == 4) {
+                        $(".header_fullpage").css("background-color", "#57bc90");
+                        ("animation-duration", "1s");
+                    }
+                    if (index == 5) {
+                        $(".header_fullpage").css("background-color", "#f7882f");
+                        ("animation", "example 1s ease 2s 1 forwards;");
+                    }
+                    if (index == 6) {
+                        $(".header_fullpage").css("background-color", "#ffffff");
+                        $(".header_fullpage").css("animation", "example 1s ease 2s 1 forwards;");
+                        $(".header_fullpage").css("color", "000000");
+                        $(".contact_container").css("color", "000000");
+                    }
+
+        }
+
 
             });
         });

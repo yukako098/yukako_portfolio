@@ -1,0 +1,59 @@
+html,
+body {
+  padding: 0;
+  height: 100%;
+  font-size: $fontBasic;
+  font-family: $abril;
+  font-weight: lighter;
+}
+
+body {
+  background-color: $dark;
+  color: $white;
+  width: 100%;
+  transition: background-color 0.5s;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: $white;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform 0.3s;
+  }
+
+  &:hover::after {
+    transform: scale(1, 1);
+  }
+}
+#main {
+  height: 100%;
+  transition: margin-left 0.5s;
+}
+
+.container {
+  padding-top: 2rem !important;
+}
+
+/* font awesome */
+.fab {
+  font-size: 1.2em;
+}

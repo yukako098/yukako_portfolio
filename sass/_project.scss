@@ -1,0 +1,72 @@
+.blood_pressure {
+  @include bigger_rectangle(url(../img/bloodpressure.jpg));
+}
+
+.dulce_vicio {
+  @include bigger_rectangle(url(../img/dulce_vicio.jpg));
+}
+
+.blog_project {
+  @include bigger_rectangle(url(../img/blog.jpg));
+}
+.smaller_rectangle {
+  height: 60%;
+  top: 20%;
+  background-color: $white;
+  position: absolute;
+  left: 60%;
+  right: 0;
+  bottom: 0;
+  width: 29%;
+
+  .title_div {
+    padding: 33px 0 0 33px;
+  }
+  p {
+    font-family: "Playfair Display", serif;
+    color: black;
+    letter-spacing: 0.5em;
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+
+  h3 {
+    margin-top: 2px;
+    margin-bottom: 0;
+    font-size: 38px;
+    @include project_tech_name;
+  }
+
+  .main_tech {
+    padding: 33px 0 9px 33px;
+  }
+
+  ul {
+    font-size: 22px;
+    @include project_tech_name;
+  }
+}
+
+.view_site_btn {
+  background-color: $white;
+  border-top: 1px solid $dark;
+  border-bottom: 1px solid $dark;
+  border-left: none;
+  border-right: none;
+  color: $dark;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.5;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 32px;
+  position: absolute;
+  bottom: 13%;
+
+  &:hover {
+    opacity: 1;
+  }
+}

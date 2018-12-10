@@ -1,3 +1,6 @@
+.fullpage-wrapper {
+  margin-top: 6%;
+}
 .section {
   text-align: left;
   font-size: 100%;
@@ -58,7 +61,7 @@
 
 .footer_fullpage,
 .header_fullpage {
-  background: #272725;
+  background: #fedc3d;
   width: 80%;
   z-index: 2;
   position: fixed;
@@ -72,6 +75,7 @@
   position: fixed;
   bottom: 0;
   height: 5%;
+  width: 100%;
 }
 
 .container {

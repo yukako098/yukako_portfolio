@@ -1,0 +1,114 @@
+@mixin without-underbar {
+  &::after {
+    height: 0;
+  }
+}
+
+@mixin hamburger {
+  height: 6px;
+  background-color: $white;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+@mixin centralize {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin title($font) {
+  font-size: $font;
+  letter-spacing: 4px;
+  margin-bottom: 1%;
+  margin-top: 0px;
+  font-weight: lighter;
+}
+
+// ABOUT SECTION Y
+
+@mixin about_letter($width, $height) {
+  display: inline-block;
+  position: absolute;
+  background-color: $dark;
+  width: $width;
+  height: $height;
+}
+@mixin letter_y($degree) {
+  -webkit-transform: skew($degree);
+  -moz-transform: skew($degree);
+  -o-transform: skew($degree);
+  @include about_letter(38%, 50%);
+}
+
+// PROJECTS
+@mixin bigger_rectangle($url) {
+  width: 72%;
+  height: 85%;
+  background-image: $url;
+  background-size: cover;
+}
+
+@mixin project_tech_name {
+  font-family: $francois;
+  letter-spacing: 0.2em;
+  color: black;
+}
+
+// MEDIA QUERY
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+/* for responsive design */
+@mixin pc-only {
+  display: block !important;
+
+  @include for-phone-only() {
+    display: none !important;
+  }
+}
+
+@mixin under-tablet {
+  display: none !important;
+  @include for-phone-only() {
+    display: initial !important;
+  }
+  @include for-tablet-portrait-up() {
+    display: initial !important;
+  }
+  @include for-tablet-landscape-up() {
+    display: initial !important;
+  }
+}
+
+@mixin mobile-only {
+  display: none !important;
+  @include for-phone-only() {
+    display: block !important;
+  }
+}
