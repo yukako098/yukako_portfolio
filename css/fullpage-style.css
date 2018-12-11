@@ -12,14 +12,14 @@
   margin: 4px;
   color: #fff;
   background: #fff;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(7, 7, 7, 0.5);
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
 #menu li.active {
   background: #666;
-  background: rgb(250, 250, 250);
+  background: black;
   color: #fff;
 }
 

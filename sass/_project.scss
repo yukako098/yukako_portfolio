@@ -45,6 +45,12 @@
     font-size: 22px;
     @include project_tech_name;
   }
+
+  a {
+    width: 100%;
+    position: absolute;
+    bottom: 13%;
+  }
 }
 
 .view_site_btn {
@@ -63,8 +69,6 @@
   text-decoration: none;
   cursor: pointer;
   margin-left: 32px;
-  position: absolute;
-  bottom: 13%;
 
   &:hover {
     opacity: 1;

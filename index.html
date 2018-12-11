@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Project</title>
+    <title>Yukako Sunabe</title>
     <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Francois+One" rel="stylesheet">
@@ -86,16 +86,6 @@
                 </ul>
             </nav>
         </header>
-        <ul id="menu" class="brk">
-            <li data-menuanchor="page1" class="active"><a href="#home" class="without_underbar"></a></li>
-            <li data-menuanchor="page2"><a href="#about" class="without_underbar"></a></li>
-            <li data-menuanchor="page3" ><a href="#project" class="without_underbar"></a></li>
-            <li data-menuanchor="page4"><a href="#project2" class="without_underbar"></a></li>
-            <li data-menuanchor="page5"><a href="#ptoject3" class="without_underbar"></a></li>
-            <li data-menuanchor="page6"><a href="#contact" class="without_underbar"></a></li>
-        </ul>
-        <!-- <footer class="footer_fullpage"></footer> -->
-
         <div id="fullpage">
             <section id="home"class="section page">
                 <div class="container">
@@ -167,11 +157,11 @@
                                 <li>Firebase</li>
                             </ul>
                         </div>
-                        <button
+                        <a href="./project1.html" target="_blank" rel="noopener noreferrer">                        <button
                         class="view_site_btn">
-                        <a href="./project1.html" target="_blank" rel="noopener noreferrer"></a>
+
                             Hover over me
-                        </button>
+                        </button></a>
                     </div>
                 </div>
             </section>
@@ -193,9 +183,10 @@
                                 <!-- <li>Firebase</li> -->
                             </ul>
                         </div>
-                        <button class="view_site_btn">
-                            Hover over me
-                        </button>
+                        <a href="./project2.html" target="_blank" rel="noopener noreferrer"> <button class="view_site_btn">
+
+                                Hover over me
+                            </button></a>
                     </div>
                 </div>
             </section>
@@ -215,9 +206,10 @@
                                 <li>JavaScript</li>
                             </ul>
                         </div>
-                        <button class="view_site_btn">
-                            Hover over me
-                        </button>
+                        <a href="./project3.html" target="_blank" rel="noopener noreferrer"> <button class="view_site_btn">
+
+                                Hover over me
+                            </button></a>
                     </div>
                 </div>
             </section>
@@ -232,16 +224,18 @@
                                     to drop me a line. You can also download my resume from button
                                     bellow and check my works on github account.
                                 </p>
-                                <ul>
-                                    <li><button>Download</button></li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/yukako-sunabe/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/yukako098" target="_blank"><i class="fab fa-github"></i></a>
-                                    </li>
-                                </ul>
                             </div>
+                            <div class="buttons">
+                            <a href="mailto:yukakosunabe@gmail.com"><button>EMAIL</button></a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/yukako-sunabe/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/yukako098" target="_blank"><i class="fab fa-github"></i></a>
+                                </li>
+                            </ul>
                         </div>
                         <div class="contact_right">
                             <img src="./img/contact.jpg" alt="contact image">
@@ -259,10 +253,7 @@
                 menu: '#menu',
                 lockAnchors: true,
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-                navigation: true,
-                navigationPosition: 'right',
                 showActiveTooltip: false,
-                slidesNavigation: false,
                 slidesNavPosition: 'bottom',
                  loopBottom: true,
                  paddingBottom: '50px',
@@ -272,34 +263,30 @@
                 onLeave:function(anchorLink, index){
                     if (index == 1) {
                         $(".header_fullpage").css("background-color", "#fedc3d");
-                        ("animation", "example 1s ease 2s 1 forwards;");
+
                     }
                     if (index == 2) {
                         $(".header_fullpage").css("background-color", "#01abaa");
-                        ("animation", "example 1s ease 2s 1 forwards;");
+
                     }
                     if (index == 3) {
                         $(".header_fullpage").css("background-color", "#fea680");
-                        ("animation-duration", "2s");
+
                     }
                     if (index == 4) {
                         $(".header_fullpage").css("background-color", "#57bc90");
-                        ("animation-duration", "1s");
+
                     }
                     if (index == 5) {
                         $(".header_fullpage").css("background-color", "#f7882f");
-                        ("animation", "example 1s ease 2s 1 forwards;");
+
                     }
                     if (index == 6) {
                         $(".header_fullpage").css("background-color", "#ffffff");
-                        $(".header_fullpage").css("animation", "example 1s ease 2s 1 forwards;");
-                        $(".header_fullpage").css("color", "000000");
-                        $(".contact_container").css("color", "000000");
+                        $(".fp-viewing-page6").css('color', 'black');
                     }
 
         }
-
-
             });
         });
         $('.round').click(function (e) {

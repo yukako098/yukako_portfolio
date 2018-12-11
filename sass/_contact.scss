@@ -1,3 +1,7 @@
+.color_dark {
+  color: black;
+}
+
 .contact_container {
   display: flex;
 }
@@ -10,13 +14,21 @@
 .contact_left {
   position: relative;
   margin-right: 1em;
+  color: black;
 
   h1 {
     @include title($fontLg);
   }
 
   .contact_details {
-    width: 70%;
+    width: 65%;
+    font-size: 2rem;
+    margin-bottom: 10%;
+  }
+
+  .buttons {
+    width: 65%;
+    margin-bottom: 3%;
   }
   p {
     font-family: "abril-display";
@@ -24,18 +36,16 @@
     margin: 0;
   }
 
-  ul {
-    margin: 1em 0;
-  }
-
   button {
-    background-color: $white;
+    width: 100%;
+    background-color: white;
     border-top: 1px solid $dark;
     border-bottom: 1px solid $dark;
     border-left: none;
     border-right: none;
     color: black;
     padding: 16px 32px;
+    font-family: $francois;
     text-align: center;
     font-size: 16px;
     opacity: 0.8;
@@ -43,18 +53,40 @@
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover {
+      background-color: black;
+      color: white;
+      opacity: 0.8;
+    }
+
+    &:focus {
+      background-color: black;
+      color: white;
+      opacity: 0.6;
+    }
+  }
+
+  a {
+    width: 100%;
+    @include without-underbar;
+  }
+
+  ul {
+    display: flex;
   }
 
   li {
-    margin-top: 5%;
-    margin-right: 5%;
-    float: left;
+    font-size: 1.5rem;
+  }
+
+  li + li {
+    margin-left: 3%;
   }
 }
 
 .contact_right {
   display: flex;
-  padding-left: 5%;
 }
 
 .user_info {
@@ -80,30 +112,6 @@
 
   img {
     width: 100%;
+    opacity: 0.6;
   }
 }
-
-// .input,
-// .message {
-//   border: none;
-//   border-bottom: 2px solid white;
-//   background-color: #565652;
-// }
-
-// .input {
-//   border-bottom: 2px solid white;
-//   height: 12%;
-//   width: 100%;
-//   margin-bottom: 3%;
-// }
-
-// input:focus {
-//   border: solid 1px #eea34a;
-// }
-
-// .message {
-//   border: 2px solid white;
-//   margin: 3% 0;
-//   height: 50%;
-//   width: 100%;
-// }

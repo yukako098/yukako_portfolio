@@ -6,7 +6,7 @@
 
 @mixin hamburger {
   height: 6px;
-  background-color: $white;
+  background-color: black;
   border-radius: 24px;
   transition: 0.3s;
 }
@@ -44,7 +44,7 @@
 
 // PROJECTS
 @mixin bigger_rectangle($url) {
-  width: 72%;
+  width: 80%;
   height: 85%;
   background-image: $url;
   background-size: cover;
@@ -54,6 +54,21 @@
   font-family: $francois;
   letter-spacing: 0.2em;
   color: black;
+}
+
+@mixin project_detail_bgc($bgcolor) {
+  background-color: $bgcolor;
+}
+
+@mixin project_details {
+  display: flex;
+  font-family: $abril;
+}
+
+@mixin description($width) {
+  width: $width;
+  margin-left: auto;
+  margin-bottom: 10%;
 }
 
 // MEDIA QUERY

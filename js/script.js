@@ -56,12 +56,13 @@ window.onload = function() {
 function openNav() {
   document.getElementById("mySidenav").style.display = "block";
   document.getElementById("mySidenav").style.width = "100%";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.getElementById("projects").style.display = "none";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-  document.body.style.backgroundColor = "#272725";
+  document.getElementById("projects").style.display = "block";
+  document.getElementById("projects").style.paddingTop = "5%";
 }
 
 function pageChange(index) {
@@ -90,7 +91,7 @@ function checkId() {
   console.log(href);
 }
 
-// project button
-function goToSite() {
-  document.getElementById("round").open("https://github.com/yukako098");
-}
+// // project button
+// function goToSite() {
+//   document.getElementById("round").open("https://github.com/yukako098");
+// }
