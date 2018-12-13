@@ -1,5 +1,20 @@
+.pbg {
+  background-color: white !important;
+}
+
+.project-sidenav {
+  align-self: center !important;
+}
+
 .project1_header {
   @include project_detail_bgc($smarkPink);
+}
+.project2_header {
+  @include project_detail_bgc($lightgreen);
+}
+
+.project3_header {
+  @include project_detail_bgc($f7882f);
 }
 
 .project1_detail_top {

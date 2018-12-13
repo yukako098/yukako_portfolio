@@ -726,31 +726,44 @@ video {
   .view_site_btn:hover {
     opacity: 1; }
 
+.pbg {
+  background-color: white !important; }
+
+.project-sidenav {
+  -ms-flex-item-align: center !important;
+  align-self: center !important; }
+
 .project1_header {
-  background-color: #fea680; }
+  background-color: #fea680;
+  color: white; }
 
 .project1_detail_top {
   background-color: #fea680;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "abril-display"; }
 
 .project2_header {
-  background-color: #57bc90; }
+  background-color: #57bc90;
+  color: white; }
 
 .project2_detail_top {
   background-color: #57bc90;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-family: "abril-display"; }
 
 .project3_header {
-  background-color: #f7882f; }
+  background-color: #f7882f;
+  color: white; }
 
 .project3_detail_top {
   background-color: #f7882f;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

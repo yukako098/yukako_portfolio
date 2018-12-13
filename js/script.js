@@ -90,8 +90,3 @@ function checkId() {
   var href = document.getElementsByTagName("a")[1].getAttribute("href");
   console.log(href);
 }
-
-// // project button
-// function goToSite() {
-//   document.getElementById("round").open("https://github.com/yukako098");
-// }

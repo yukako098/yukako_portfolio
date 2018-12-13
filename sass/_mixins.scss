@@ -58,6 +58,7 @@
 
 @mixin project_detail_bgc($bgcolor) {
   background-color: $bgcolor;
+  color: white;
 }
 
 @mixin project_details {
