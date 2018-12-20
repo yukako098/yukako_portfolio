@@ -1,130 +1,143 @@
 @mixin without-underbar {
-  &::after {
-    height: 0;
-  }
+    &::after {
+        height: 0;
+    }
 }
 
 @mixin hamburger {
-  height: 6px;
-  background-color: black;
-  border-radius: 24px;
-  transition: 0.3s;
+    height: 6px;
+    background-color: black;
+    border-radius: 24px;
+    transition: 0.3s;
 }
 
 @mixin centralize {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @mixin title($font) {
-  font-size: $font;
-  letter-spacing: 4px;
-  margin-bottom: 1%;
-  margin-top: 0px;
-  font-weight: lighter;
+    font-size: $font;
+    letter-spacing: 4px;
+    margin-bottom: 1%;
+    margin-top: 0px;
+    font-weight: lighter;
 }
 
 // ABOUT SECTION Y
+@mixin pos-a-t-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin full-size {
+    width: 100%;
+    height: 100%;
+}
 
 @mixin about_letter($width, $height) {
-  display: inline-block;
-  position: absolute;
-  background-color: $dark;
-  width: $width;
-  height: $height;
+    display: inline-block;
+    position: absolute;
+    background-color: $dark;
+    width: $width;
+    height: $height;
 }
 @mixin letter_y($degree) {
-  -webkit-transform: skew($degree);
-  -moz-transform: skew($degree);
-  -o-transform: skew($degree);
-  @include about_letter(38%, 50%);
+    -webkit-transform: skew($degree);
+    -moz-transform: skew($degree);
+    -o-transform: skew($degree);
+    @include about_letter(43%, 50%);
 }
 
 // PROJECTS
 @mixin bigger_rectangle($url) {
-  width: 80%;
-  height: 85%;
-  background-image: $url;
-  background-size: cover;
+    width: 75%;
+    height: 70%;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    background-image: $url;
+    background-size: cover;
 }
 
 @mixin project_tech_name {
-  font-family: $francois;
-  letter-spacing: 0.2em;
-  color: black;
+    font-family: $francois;
+    letter-spacing: 0.2em;
+    color: black;
 }
 
 @mixin project_detail_bgc($bgcolor) {
-  background-color: $bgcolor;
-  color: white;
+    background-color: $bgcolor;
+    color: white;
 }
 
 @mixin project_details {
-  display: flex;
-  font-family: $abril;
+    display: flex;
+    font-family: $abril;
 }
 
 @mixin description($width) {
-  width: $width;
-  margin-left: auto;
-  margin-bottom: 10%;
+    width: $width;
+    margin-left: auto;
+    margin-bottom: 10%;
 }
 
 // MEDIA QUERY
 @mixin for-phone-only {
-  @media (max-width: 599px) {
-    @content;
-  }
+    @media (max-width: 599px) {
+        @content;
+    }
 }
 @mixin for-tablet-portrait-up {
-  @media (min-width: 600px) and (max-width: 899px) {
-    @content;
-  }
+    @media (min-width: 600px) and (max-width: 899px) {
+        @content;
+    }
 }
 
 @mixin for-tablet-landscape-up {
-  @media (min-width: 900px) and (max-width: 1199px) {
-    @content;
-  }
+    @media (min-width: 900px) and (max-width: 1199px) {
+        @content;
+    }
 }
 @mixin for-desktop-up {
-  @media (min-width: 1200px) {
-    @content;
-  }
+    @media (min-width: 1200px) {
+        @content;
+    }
 }
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) {
-    @content;
-  }
+    @media (min-width: 1800px) {
+        @content;
+    }
 }
 
 /* for responsive design */
 @mixin pc-only {
-  display: block !important;
+    display: block !important;
 
-  @include for-phone-only() {
-    display: none !important;
-  }
+    @include for-phone-only() {
+        display: none !important;
+    }
 }
 
 @mixin under-tablet {
-  display: none !important;
-  @include for-phone-only() {
-    display: initial !important;
-  }
-  @include for-tablet-portrait-up() {
-    display: initial !important;
-  }
-  @include for-tablet-landscape-up() {
-    display: initial !important;
-  }
+    display: none !important;
+    @include for-phone-only() {
+        display: initial !important;
+    }
+    @include for-tablet-portrait-up() {
+        display: initial !important;
+    }
+    @include for-tablet-landscape-up() {
+        display: initial !important;
+    }
 }
 
 @mixin mobile-only {
-  display: none !important;
-  @include for-phone-only() {
-    display: block !important;
-  }
+    display: none !important;
+    @include for-phone-only() {
+        display: block !important;
+    }
 }

@@ -16,7 +16,26 @@
 
 
 <body>
-    <div id="mySidenav" class="project-sidenav">
+    <!-- BACKGROUND COLOR OF PARTICULAR SLIDE -->
+    <!--
+            <ul class="home-bg pos-a-t-l full-size" data-active-case="14" data-home-state="default">
+                <li style="background-color: rgb(239, 160, 71);"></li>
+                <li style="background-color: rgb(235, 77, 85);"></li>
+                <li style="background-color: rgb(241, 208, 27);"></li>
+                <li style="background-color: rgb(36, 103, 210);"></li>
+                <li style="background-color: rgb(247, 92, 79);"></li>
+                <li style="background-color: rgb(236, 128, 175);"></li>
+                <li style="background-color: rgb(130, 192, 208);"></li>
+                <li style="background-color: rgb(129, 193, 242);"></li>
+                <li style="background-color: rgb(161, 212, 97);"></li>
+                <li style="background-color: rgb(242, 105, 62);"></li>
+                <li style="background-color: rgb(87, 131, 200);"></li>
+                <li style="background-color: rgb(255, 178, 68);"></li>
+                <li style="background-color: rgb(242, 156, 80);"></li>
+                <li class="vid-bg"></li>
+                <li class="home-front-bg"></li>
+            </ul> -->
+    <div id="mySidenav" class="sidenav">
         <div class="cancel" onclick="closeNav()">&times;</div>
         <div class="sidebar_menus">
             <div class="sidebar_menu">
@@ -102,38 +121,59 @@
             </section>
             <section id="about"class="section page">
                 <div class="container">
-                    <section class="about_section">
-                        <div class="about_left">
-                            <div class="mask_landscape">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
+                    <div class="wrapper pos-a-t-l full-size" data-state="1" data-front-state="covered">
+                        <div class="blend-multiply pos-a-t-l full-size home-vid-mask-wrap">
+                            <div class="home-vid-bg-imgs pos-a-t-l full-size js-monitor-home-case" data-active-case="14"></div>
+
+                            <div class="home-vid-wrap pos-a-t-l full-size active js-yt-player" data-active="on">
+                                <iframe
+                                id="player"
+                                class="p
+                        os-a-t-l yt-player case-embed js-play-auto desktop-only no-touch-div"
+                                frameBorder="0"
+                                allowfullscreen
+                                title="YouTube video player" width="460"
+                                height="215" src="https://www.youtube.com/embed/dqvF85T4vCg?autoplay=1" allow="autoplay"></iframe>
+                            </div>
+                            <div class="blend-screen pos-a-t-l full-size home-video-mask">
+                                <div class="letters pos-a-center" data-active-letter="n">
+                                    <ul class="letter-n">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="about_right">
-                            <div class=" my_info">
-                                <div class="about_me">
+
+                        <div class="type-wrap pos-a-t-l white-text js-monitor-home-state" data-home-state="default" data-active="on">
+                            <div class="flex-vert-center">
+                                <div class="overflow-animate-wrap title-wrap title">
                                     <p>Front-end Developer</p>
-                                    <h2>Yukako Sunabe</h2>
-                                    <p> Hello! I am currently a student in
-                                        Vancouver. I'm passionate about
-                                        learning new
-                                        things
-                                        and making something useful for people.
-                                    </p>
+                                    <h2 class="medium pr-case-title">
+                                  Yukako Sunabe
+                                </h2>
                                 </div>
-                                <div class="about_skills">
+                                <div class="overflow-animate-wrap between-name-and-skills">
+                                    <h6 class="pr-case-desc">
+                                Hello! I am currently a student in
+                                Vancouver. I'm passionate about
+                                learning new
+                                things
+                                and making something useful for people.
+                                </h6>
+                                </div>
+                                <div class="overflow-animate-wrap clickable skills">
                                     <h3>Skills</h3>
-                                    <p> HTML5 / CSS3 / Javascript / Reactjs / Firebase /
-                                         Git / WordPress / Bootstrap / Photoshop / Illustrator / Sass / Gulp /
+                                    <p> HTML5 / CSS3 / Javascript / React.js / WordPress /
+                                            Git / Firebase / Bootstrap / React Native  / Sass / Gulp /
                                         Responsive Design /
                                     </p>
                                 </div>
                             </div>
-
-                    </section>
+                        </div>
+                    </div>
+                    <!-- </section> -->
 
                 </div>
             </section>
@@ -156,7 +196,7 @@
                         <a href="./project1.html" target="_blank" rel="noopener noreferrer">                        <button
                         class="view_site_btn">
 
-                            Hover over me
+                            Go to Description
                         </button></a>
                     </div>
                 </div>
@@ -176,12 +216,11 @@
                                 <li>Bootstrap</li>
                                 <li>SASS</li>
                                 <li>JavaScript</li>
-                                <!-- <li>Firebase</li> -->
                             </ul>
                         </div>
                         <a href="./project2.html" target="_blank" rel="noopener noreferrer"> <button class="view_site_btn">
 
-                                Hover over me
+                                Go to Description
                             </button></a>
                     </div>
                 </div>
@@ -204,7 +243,7 @@
                         </div>
                         <a href="./project3.html" target="_blank" rel="noopener noreferrer"> <button class="view_site_btn">
 
-                                Hover over me
+                                Go to Description
                             </button></a>
                     </div>
                 </div>
@@ -212,28 +251,31 @@
             <section id="contact" class="section page">
                 <div class="container contact_container">
                         <div class="contact_left">
-                            <h1>Contact<br />Resume</h1>
+                            <div class="centralize_vertical">
+                                <h1>Contact<br />Resume</h1>
 
-                            <div class="contact_details">
-                                <p>
-                                    Thank you for visiting. I hope you enjoyed this trip. Feel free
-                                    to drop me a line. You can also download my resume from button
-                                    bellow and check my works on github account.
-                                </p>
+                                <div class="contact_details">
+                                    <p>
+                                        Thank you for visiting. I hope you enjoyed this trip. Feel free
+                                        to drop me a line. You can also download my resume from button
+                                        bellow and check my works on github account.
+                                    </p>
+                                </div>
+                                <div class="buttons">
+                                <a href="mailto:yukakosunabe@gmail.com"><button>EMAIL</button></a>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/yukako-sunabe/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/yukako098" target="_blank"><i class="fab fa-github"></i></a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="buttons">
-                            <a href="mailto:yukakosunabe@gmail.com"><button>EMAIL</button></a>
-                            </div>
-                            <ul>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/yukako-sunabe/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/yukako098" target="_blank"><i class="fab fa-github"></i></a>
-                                </li>
-                            </ul>
                         </div>
                         <div class="contact_right">
+                            <span class="helper"></span>
                             <img src="./img/contact.jpg" alt="contact image">
                         </div>
                 </div>
@@ -243,14 +285,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 menu: '#menu',
                 lockAnchors: true,
                 anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-                showActiveTooltip: false,
-                slidesNavPosition: 'bottom',
+                // showActiveTooltip: false,
+                // slidesNavPosition: 'bottom',
                  loopBottom: true,
                  paddingBottom: '50px',
                 // Design

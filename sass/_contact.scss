@@ -1,117 +1,129 @@
 .color_dark {
-  color: black;
+    color: black;
 }
 
 .contact_container {
-  display: flex;
+    display: flex;
+    justify-content: space-around;
 }
 
-.contact_left,
-.contact_right {
-  width: 50%;
-}
+// .contact_left,
+// .contact_right {
+//   width: 50%;
+// }
 
 .contact_left {
-  position: relative;
-  margin-right: 1em;
-  color: black;
-
-  h1 {
-    @include title($fontLg);
-  }
-
-  .contact_details {
-    width: 65%;
-    font-size: 2rem;
-    margin-bottom: 10%;
-  }
-
-  .buttons {
-    width: 65%;
-    margin-bottom: 3%;
-  }
-  p {
-    font-family: "abril-display";
-    font-size: 0.8em;
-    margin: 0;
-  }
-
-  button {
-    width: 100%;
-    background-color: white;
-    border-top: 1px solid $dark;
-    border-bottom: 1px solid $dark;
-    border-left: none;
-    border-right: none;
+    width: 30%;
+    position: relative;
+    margin-right: 1em;
     color: black;
-    padding: 16px 32px;
-    font-family: $francois;
-    text-align: center;
-    font-size: 16px;
-    opacity: 0.8;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
 
-    &:hover {
-      background-color: black;
-      color: white;
-      opacity: 0.8;
+    .centralize_vertical {
+        position: absolute;
+        top: 10%;
     }
 
-    &:focus {
-      background-color: black;
-      color: white;
-      opacity: 0.6;
+    h1 {
+        @include title($fontLg);
     }
-  }
 
-  a {
-    width: 100%;
-    @include without-underbar;
-  }
+    .contact_details {
+        font-size: 2rem;
+        margin-bottom: 10%;
+    }
 
-  ul {
-    display: flex;
-  }
+    .buttons {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    p {
+        font-family: "abril-display";
+        font-size: 0.8em;
+        margin: 0;
+    }
 
-  li {
-    font-size: 1.5rem;
-  }
+    button {
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid $dark;
+        border-bottom: 1px solid $dark;
+        border-left: none;
+        border-right: none;
+        color: black;
+        padding: 16px 32px;
+        font-family: $francois;
+        text-align: center;
+        font-size: 16px;
+        opacity: 0.8;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
 
-  li + li {
-    margin-left: 3%;
-  }
-}
+        &:hover {
+            background-color: black;
+            color: white;
+            opacity: 0.8;
+        }
 
-.contact_right {
-  display: flex;
+        &:focus {
+            background-color: black;
+            color: white;
+            opacity: 0.6;
+        }
+    }
+
+    a {
+        width: 100%;
+        @include without-underbar;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        font-size: 1.5rem;
+    }
+
+    li + li {
+        margin-left: 3%;
+    }
 }
 
 .user_info {
-  width: 100%;
+    width: 100%;
 }
 
 .contact_form {
-  padding: 5%;
-  border: 2px solid $white;
-  background-color: $lighterGray;
-  height: 75%;
+    padding: 5%;
+    border: 2px solid $white;
+    background-color: $lighterGray;
+    height: 75%;
 }
 
 .send_btn {
-  float: right;
-  margin-top: 5%;
-  width: 30%;
-  height: 10%;
+    float: right;
+    margin-top: 5%;
+    width: 30%;
+    height: 10%;
 }
 
 .contact_right {
-  flex: 1;
+    width: 40%;
 
-  img {
-    width: 100%;
-    opacity: 0.6;
-  }
+    .helper {
+        display: inline-block;
+        height: 15%;
+        vertical-align: middle;
+    }
+
+    img {
+        width: 100%;
+        opacity: 0.6;
+        vertical-align: middle;
+    }
+}
+
+.test {
 }

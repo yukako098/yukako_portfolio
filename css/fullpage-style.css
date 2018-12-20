@@ -1,84 +1,84 @@
 .fullpage-wrapper {
-  margin-top: 5%;
+    /* margin-top: 10%; */
 }
 .section {
-  text-align: left;
-  font-size: 100%;
-  position: relative;
+    text-align: left;
+    font-size: 100%;
+    position: relative;
 }
 
 #menu li {
-  display: inline-block;
-  margin: 4px;
-  color: #fff;
-  background: #fff;
-  background: rgba(7, 7, 7, 0.5);
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+    display: inline-block;
+    margin: 4px;
+    color: #fff;
+    background: #fff;
+    background: rgba(7, 7, 7, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
 }
 
 #menu li.active {
-  background: #666;
-  background: black;
-  color: #fff;
+    background: #666;
+    background: black;
+    color: #fff;
 }
 
 #menu li a {
-  text-decoration: none;
-  color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 #menu li.active a:hover {
-  color: #000;
+    color: #000;
 }
 
 #menu li:hover {
-  background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 #menu li a,
 #menu li.active a {
-  padding: 2px 11px;
-  display: block;
+    padding: 2px 11px;
+    display: block;
 }
 
 #menu li.active a {
-  color: #fff;
+    color: #fff;
 }
 
 #menu {
-  position: absolute;
-  top: 45%;
-  right: -20%;
-  height: 4%;
-  z-index: 3;
-  width: 50%;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  transform: rotate(90deg);
+    position: absolute;
+    top: 45%;
+    right: -20%;
+    height: 4%;
+    z-index: 3;
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    transform: rotate(90deg);
 }
 
 .footer_fullpage,
 .header_fullpage {
-  background: #fedc3d;
-  width: 80%;
-  z-index: 2;
-  position: fixed;
+    background: #fedc3d;
+    width: 80%;
+    z-index: 2;
+    position: fixed;
 }
 
 .header_fullpage {
-  top: 0;
+    top: 0;
 }
 
 .footer_fullpage {
-  position: fixed;
-  bottom: 0;
-  height: 5%;
-  width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
 }
 
 .container {
-  padding-top: 5em;
-  height: 83%;
+    height: 100%;
+    margin-top: 6%;
 }
