@@ -65,6 +65,8 @@ function closeNav() {
     document.getElementById("projects").style.paddingTop = "5%";
 }
 
+// Initial Y animation
+
 function pageChange(index) {
     var pageIds = [
         "#home",

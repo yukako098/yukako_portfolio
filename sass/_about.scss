@@ -1,3 +1,16 @@
+.title-wrap,
+.between-name-and-skills,
+.skills {
+    margin-top: 200%;
+    transition: all 1.1s ease-in;
+}
+
+.fp-viewing-page2 .title-wrap,
+.fp-viewing-page2 .between-name-and-skills,
+.fp-viewing-page2 .skills {
+    margin-top: 0;
+}
+
 div {
     position: relative;
 }
@@ -169,7 +182,7 @@ iframe {
 .home-video-mask .letter-n li:nth-child(3) {
     top: 49%;
     left: 23.2%;
-    @include about_letter(44.2%, 60%);
+    @include about_letter(18vw, 40vh);
 }
 
 .home-video-mask .letters li {

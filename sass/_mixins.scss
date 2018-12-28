@@ -39,7 +39,7 @@
 }
 
 @mixin about_letter($width, $height) {
-    display: inline-block;
+    // display: inline-block;
     position: absolute;
     background-color: $dark;
     width: $width;
@@ -49,7 +49,7 @@
     -webkit-transform: skew($degree);
     -moz-transform: skew($degree);
     -o-transform: skew($degree);
-    @include about_letter(43%, 50%);
+    @include about_letter(17.5vw, 35vh);
 }
 
 // PROJECTS

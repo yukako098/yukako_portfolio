@@ -3,14 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Yukako Sunabe</title>
-    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1, maximum-scale=1, minimum-scale=1" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Francois+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/fullpage-style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
-    <script type="text/javascript" src="./js/delighters.js"></script>
     <script src="./js/script.js"></script>
 </head>
 
@@ -130,13 +128,19 @@
                                 id="player"
                                 class="p
                         os-a-t-l yt-player case-embed js-play-auto desktop-only no-touch-div"
+                        data-autoplay
+                        data-keepplaying
                                 frameBorder="0"
-                                allowfullscreen
-                                title="YouTube video player" width="460"
-                                height="215" src="https://www.youtube.com/embed/dqvF85T4vCg?autoplay=1" allow="autoplay"></iframe>
+                                title="YouTube video player"
+                                width="1465"
+                                height="768" src="https://videos.pexels.com/videos/water-crashing-over-the-rocks-1093662?mute=1"></iframe>
+                                <!-- <video width="100%" autoplay="autoplay">
+                                    <source src="./img/test.mp4" type="video/mp4">
+                                    Your browser does not support HTML5 video.
+                                </video> -->
                             </div>
                             <div class="blend-screen pos-a-t-l full-size home-video-mask">
-                                <div class="letters pos-a-center" data-active-letter="n">
+                                <div class="letters pos-a-center">
                                     <ul class="letter-n">
                                         <li></li>
                                         <li></li>
@@ -213,7 +217,6 @@
                             <p>MAIN TECH</p>
                             <ul>
                                 <li>HTML</li>
-                                <li>Bootstrap</li>
                                 <li>SASS</li>
                                 <li>JavaScript</li>
                             </ul>
@@ -306,7 +309,7 @@
                     }
                     if (index == 2) {
                         $(".header_fullpage").css("background-color", "#01abaa");
-
+                        // letter_y();
                     }
                     if (index == 3) {
                         $(".header_fullpage").css("background-color", "#fea680");
