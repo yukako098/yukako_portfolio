@@ -1,114 +1,153 @@
 .pbg {
-  background-color: white !important;
+    background-color: white !important;
+}
+
+#projects {
+    margin-top: 98.08px;
 }
 
 .project-sidenav {
-  align-self: center !important;
+    align-self: center !important;
 }
 
 .project1_header {
-  @include project_detail_bgc($smarkPink);
+    @include project_detail_bgc($smarkPink);
 }
 .project2_header {
-  @include project_detail_bgc($lightgreen);
+    @include project_detail_bgc($lightgreen);
 }
 
 .project3_header {
-  @include project_detail_bgc($orange);
+    @include project_detail_bgc($orange);
 }
 
 .project1_detail_top {
-  @include project_detail_bgc($smarkPink);
-  @include project_details;
+    @include project_detail_bgc($smarkPink);
+    @include project_details;
 }
 
 .project2_header {
-  @include project_detail_bgc($lightgreen);
+    @include project_detail_bgc($lightgreen);
 }
 
 .project2_detail_top {
-  @include project_detail_bgc($lightgreen);
-  @include project_details;
+    @include project_detail_bgc($lightgreen);
+    @include project_details;
 }
 
 .project3_header {
-  @include project_detail_bgc($orange);
+    @include project_detail_bgc($orange);
 }
 
 .project3_detail_top {
-  @include project_detail_bgc($orange);
-  @include project_details;
+    @include project_detail_bgc($orange);
+    @include project_details;
 }
 
 .left_fixed {
-  position: fixed;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  z-index: 100;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 100;
 
-  h1 {
-    width: 70%;
-    font-weight: bold;
-    font-size: 2.5rem;
-    letter-spacing: 4px;
-  }
-
-  p {
-    text-align: right;
-    margin: 0;
-    width: 70%;
-  }
-
-  button {
-    background-color: transparent;
-    width: 70%;
-    border: 1px solid white;
-    padding: 1%;
-    font-family: $francois;
-    color: white;
-  }
-
-  a {
-    color: white;
-    @include without-underbar;
-
-    &:hover {
-      color: white;
-      opacity: 0.8;
-      text-decoration: none;
+    h1 {
+        width: 70%;
+        font-weight: bold;
+        font-size: 2.5rem;
+        letter-spacing: 4px;
     }
-  }
+
+    p {
+        text-align: right;
+        margin: 0;
+        width: 70%;
+    }
+
+    button {
+        background-color: transparent;
+        width: 70%;
+        border: 1px solid white;
+        padding: 1%;
+        font-family: $francois;
+        color: white;
+    }
+
+    a {
+        color: white;
+        @include without-underbar;
+
+        &:hover {
+            color: white;
+            opacity: 0.8;
+            text-decoration: none;
+        }
+    }
 }
 
 .right_description {
-  width: 60%;
-  margin-left: auto;
-  margin-right: 10%;
-  padding-top: 5%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: 10%;
+    padding-top: 5%;
 
-  .top_image {
-    margin-bottom: 20%;
-  }
+    p {
+        font-size: 1.2rem;
+    }
 
-  img {
-    width: 100%;
-    opacity: 0.3;
-  }
+    .top_image {
+        height: 80vh;
+    }
+
+    img {
+        width: 100%;
+        opacity: 0.3;
+    }
 }
 
 .first_dscrip {
-  @include description(55%);
-  h2 {
-    margin-bottom: 5%;
-  }
+    @include description(55%);
+    h2 {
+        margin-bottom: 5%;
+    }
+    h2.delighter,
+    p.delighter {
+        transform: translatey(50%);
+        opacity: 0;
+        transition: all 0.55s ease-out;
+    }
+    h2.delighter.started,
+    p.delighter.started {
+        transform: none;
+        opacity: 1;
+    }
 }
 
 .second_pic {
-  @include description(80%);
+    @include description(80%);
+    .right.delighter {
+        transform: translate(100%);
+        opacity: 0;
+        transition: all 0.75s ease-out;
+    }
+    .right.delighter.started {
+        transform: none;
+        opacity: 0.3;
+    }
 }
 
 .other_dscrip {
-  @include description(55%);
+    @include description(55%);
+
+    p.delighter {
+        transform: translate(100%);
+        opacity: 0;
+        transition: all 0.55s ease-out;
+    }
+
+    p.delighter.started {
+        transform: none;
+        opacity: 1;
+    }
 }

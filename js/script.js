@@ -78,13 +78,14 @@ function pageChange(index) {
     ];
     var href = document.getElementsByTagName("a")[index].getAttribute("href");
     for (var i = 0; i < pageIds.length; i++) {
-        var li = document.getElementById("menu").children[i];
-        if (li.className == "active") {
-            li.classList.remove("active");
+        var li = document.getElementsByTagName("body").children[i];
+        if (li.className.contain("fp-viewing-page")) {
+            li.classList.removeAll();
+            li.classList.add("fp-viewing-page" + i + 1);
         }
-        if (href == pageIds[i]) {
-            li.classList.add("active");
-        }
+        // if (href == pageIds[i]) {
+        //     li.classList.add("active");
+        // }
     }
 }
 
