@@ -1171,9 +1171,47 @@ li:nth-child(3)::before {
     letter-spacing: 0.2em;
     color: black; }
   .smaller_rectangle a {
-    width: 100%;
+    width: 91%;
     position: absolute;
-    bottom: 13%; }
+    bottom: 13%;
+    padding-left: 9%; }
+    .smaller_rectangle a::after {
+      height: 0; }
+  .smaller_rectangle .horizontal {
+    padding-left: 10%;
+    -webkit-animation: horizontal_6973 2.72s ease infinite;
+    animation: horizontal_6973 2.72s ease infinite;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
+@-webkit-keyframes horizontal_6973 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  4.41177% {
+    -webkit-transform: translate(35px, 0);
+    transform: translate(35px, 0); }
+  8.82353% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+@keyframes horizontal_6973 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+  4.41177% {
+    -webkit-transform: translate(35px, 0);
+    transform: translate(35px, 0); }
+  8.82353% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); } }
+  .smaller_rectangle .fas {
+    font-size: 2rem;
+    color: black; }
+  .smaller_rectangle .circle {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    padding-top: 3%; }
 
 .view_site_btn {
   background-color: #f4f4f4;
@@ -1182,9 +1220,8 @@ li:nth-child(3)::before {
   border-left: none;
   border-right: none;
   color: #272725;
-  padding: 16px 32px;
   text-align: center;
-  font-size: 16px;
+  font-size: 0.8rem;
   opacity: 0.5;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1192,7 +1229,14 @@ li:nth-child(3)::before {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  margin-left: 32px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 65%;
+  font-family: "Francois One", sans-serif; }
   .view_site_btn:hover {
     opacity: 1; }
 

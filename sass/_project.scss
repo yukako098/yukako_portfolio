@@ -59,9 +59,39 @@
     }
 
     a {
-        width: 100%;
+        width: 91%;
         position: absolute;
         bottom: 13%;
+        padding-left: 9%;
+        @include without-underbar;
+    }
+
+    .horizontal {
+        padding-left: 10%;
+        animation: horizontal_6973 2.72s ease infinite;
+        transform-origin: 50% 50%;
+    }
+
+    @keyframes horizontal_6973 {
+        0% {
+            transform: translate(0, 0);
+        }
+        4.41177% {
+            transform: translate(35px, 0);
+        }
+        8.82353% {
+            transform: translate(0, 0);
+        }
+    }
+
+    .fas {
+        font-size: 2rem;
+        color: black;
+    }
+
+    .circle {
+        transform: rotate(-90deg);
+        padding-top: 3%;
     }
 }
 
@@ -72,15 +102,17 @@
     border-left: none;
     border-right: none;
     color: $dark;
-    padding: 16px 32px;
     text-align: center;
-    font-size: 16px;
+    font-size: 0.8rem;
     opacity: 0.5;
     transition: 0.3s;
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
-    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    width: 65%;
+    font-family: $francois;
 
     &:hover {
         opacity: 1;
