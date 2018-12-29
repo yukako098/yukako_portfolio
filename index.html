@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body id="body">
     <!-- BACKGROUND COLOR OF PARTICULAR SLIDE -->
     <!--
             <ul class="home-bg pos-a-t-l full-size" data-active-case="14" data-home-state="default">
@@ -40,7 +40,8 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">01.</p>
                 </div>
-                <a href="#home" class="sidebar_a" onclick="closeNav(), pageChange(0)">
+                <a href="#top" class="sidebar_a" onclick="closeNav(), pageChange(0)">
+                    <!-- data-menuanchor="top" -->
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Top</h4>
                             <p class="sidebar_description">- Back to Top page.</p>
@@ -51,7 +52,8 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">02.</p>
                 </div>
-                <a href="#about" class="sidebar_a" onclick="closeNav(), pageChange(1)">
+                <a href="#about-me" class="sidebar_a" onclick="closeNav(), pageChange(1)">
+                    <!-- data-menuanchor="about-me" -->
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">About</h4>
                             <p class="sidebar_description">- INTRODUCE MYSELF.</p>
@@ -62,7 +64,8 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">03.</p>
                 </div>
-                <a href="#project" class="sidebar_a" onclick="closeNav(), pageChange(2)">
+                <a href="#granma"  class="sidebar_a" onclick="closeNav(), pageChange(2)">
+                    <!-- data-menuanchor="granma" -->
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Project</h4>
                             <p class="sidebar_description">- HERE'S WHAT'S BEEN DOING.</p>
@@ -73,7 +76,8 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">04.</p>
                 </div>
-                <a href="#contact" class="sidebar_a" onclick="closeNav(), pageChange(3)">
+                <a href="#getInTouch"  class="sidebar_a" onclick="closeNav(), pageChange(3)">
+                    <!-- data-menuanchor="getInTouch" -->
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Contact</h4>
                             <p class="sidebar_description">- I'D LOVE TO HEAR FROM YOU.</p>
@@ -181,7 +185,7 @@
 
                 </div>
             </section>
-            <section id="project" class="section page">
+            <section id="project1" class="section page">
                 <div class="container">
                     <div class="blood_pressure"></div>
                     <div class="smaller_rectangle">
@@ -305,13 +309,14 @@
     <script>
         $(document).ready(function () {
             $('#fullpage').fullpage({
-                menu: '#menu',
-                lockAnchors: true,
-                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
-                // showActiveTooltip: false,
-                // slidesNavPosition: 'bottom',
+                menu: '.sidebar_menu',
+                // lockAnchors: true,
+                scrollingSpeed: 1000,
+                anchors: ['top', 'about-me', 'granma', 'dulce', 'wp', 'getInTouch'],
+                css3: true,
+                paddingTop: '10vh',
                  loopBottom: true,
-                 paddingBottom: '50px',
+                 //paddingBottom: '50px',
                 // Design
                 sectionsColor: ['#fedc3d', '#01abaa', '#fea680', '#57bc90', '#f7882f', '#ffffff'],
 
@@ -338,16 +343,10 @@
                     }
                     if (index == 6) {
                         $(".header_fullpage").css("background-color", "#ffffff");
-                        $(".fp-viewing-page6").css('color', 'black');
                     }
 
         }
             });
-        });
-        $('.round').click(function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            $('.arrow').toggleClass('bounceAlpha');
         });
     </script>
 </body>

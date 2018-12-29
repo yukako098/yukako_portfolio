@@ -5,9 +5,9 @@
 //     transition: all 1.1s ease-in;
 // }
 
-// .fp-viewing-page2 .title-wrap,
-// .fp-viewing-page2 .between-name-and-skills,
-// .fp-viewing-page2 .skills {
+// .fp-viewing-about-me .title-wrap,
+// .fp-viewing-about-me .between-name-and-skills,
+// .fp-viewing-about-me .skills {
 //     margin-top: 0;
 // }
 
@@ -80,6 +80,21 @@
             transform: translate(35px, 0);
         }
         8.82353% {
+            transform: translate(0, 0);
+        }
+        13.23529% {
+            transform: translate(35px, 0);
+        }
+        17.64706% {
+            transform: translate(0, 0);
+        }
+        22.05882% {
+            transform: translate(35px, 0);
+        }
+        26.47059% {
+            transform: translate(0, 0);
+        }
+        100% {
             transform: translate(0, 0);
         }
     }

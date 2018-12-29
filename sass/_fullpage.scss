@@ -1,6 +1,6 @@
-.fullpage-wrapper {
-    margin-top: 10vh;
-}
+// .fullpage-wrapper {
+//     margin-top: 10vh;
+// }
 .section {
     text-align: left;
     font-size: 100%;
@@ -61,32 +61,33 @@
 
 .footer_fullpage,
 .header_fullpage {
+    background: #fedc3d;
     width: 80%;
     z-index: 2;
     position: fixed;
 }
 
-.fp-viewing-page1 .header_fullpage {
+.fp-viewing-top .header_fullpage {
     background: #fedc3d;
 }
 
-.fp-viewing-page2 .header_fullpage {
+.fp-viewing-about-me .header_fullpage {
     background: #01abaa;
 }
 
-.fp-viewing-page3 .header_fullpage {
+.fp-viewing-granma .header_fullpage {
     background: #fea680;
 }
 
-.fp-viewing-page4 .header_fullpage {
+.fp-viewing-dulce .header_fullpage {
     background: #57bc90;
 }
 
-.fp-viewing-page5 .header_fullpage {
+.fp-viewing-wp .header_fullpage {
     background: #f7882f;
 }
 
-.fp-viewing-page6 .header_fullpage {
+.fp-viewing-getInTouch .header_fullpage {
     background: #ffffff;
 }
 
