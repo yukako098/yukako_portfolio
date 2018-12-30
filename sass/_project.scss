@@ -1,16 +1,3 @@
-// .title-wrap,
-// .between-name-and-skills,
-// .skills {
-//     margin-top: 200%;
-//     transition: all 1.1s ease-in;
-// }
-
-// .fp-viewing-about-me .title-wrap,
-// .fp-viewing-about-me .between-name-and-skills,
-// .fp-viewing-about-me .skills {
-//     margin-top: 0;
-// }
-
 .blood_pressure {
     @include bigger_rectangle(url(../img/bloodpressure.jpg));
 }
@@ -26,10 +13,10 @@
     background-color: $white;
     position: absolute;
     bottom: 0;
-    top: 20%;
+    top: 17%;
     right: 7%;
-    width: 30%;
-    height: 65%;
+    width: 27%;
+    height: 77%;
 
     .title_div {
         padding: 33px 0 0 33px;

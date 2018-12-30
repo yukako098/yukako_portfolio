@@ -54,10 +54,10 @@
 
 // PROJECTS
 @mixin bigger_rectangle($url) {
-    width: 75%;
-    height: 70%;
+    width: 69%;
+    height: 80%;
     position: absolute;
-    top: 5%;
+    top: 0%;
     left: 7%;
     background-image: $url;
     background-size: cover;

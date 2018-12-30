@@ -358,12 +358,20 @@ a {
   -o-transition: margin-left 0.5s;
   transition: margin-left 0.5s; }
 
-.container {
-  padding-top: 2rem !important; }
-
 /* font awesome */
 .fab {
   font-size: 1.2em; }
+
+.p-relative {
+  position: relative; }
+
+#home,
+#about,
+#project1,
+#project2,
+#project3,
+#contact {
+  padding-top: 6rem; }
 
 .section {
   text-align: left;
@@ -416,12 +424,13 @@ a {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-.footer_fullpage,
 .header_fullpage {
   background: #fedc3d;
-  width: 80%;
-  z-index: 2;
-  position: fixed; }
+  z-index: 99;
+  position: fixed;
+  height: 11vh;
+  width: 100%;
+  color: black; }
 
 .fp-viewing-top .header_fullpage {
   background: #fedc3d; }
@@ -441,14 +450,8 @@ a {
 .fp-viewing-getInTouch .header_fullpage {
   background: #ffffff; }
 
-.header_fullpage {
-  top: 0; }
-
-.footer_fullpage {
-  position: fixed;
-  bottom: 0;
-  height: 5%;
-  width: 100%; }
+.fp-scroller {
+  height: 100%; }
 
 .container {
   height: 100%; }
@@ -546,6 +549,7 @@ a {
     font-family: "Francois One", sans-serif; }
 
 .header_container {
+  height: 100px;
   padding: 0;
   left: 0;
   width: 100%;
@@ -647,9 +651,6 @@ a {
 .fp-viewing-about-me .skills {
   margin-top: 0; }
 
-div {
-  position: relative; }
-
 .pos-a-t-l {
   position: absolute;
   top: 0;
@@ -664,7 +665,8 @@ div {
   -webkit-transition: 0.8s cubic-bezier(0.52, 0.01, 0.16, 1) 0.35s;
   -moz-transition: 0.8s cubic-bezier(0.52, 0.01, 0.16, 1) 0.35s;
   -o-transition: 0.8s cubic-bezier(0.52, 0.01, 0.16, 1) 0.35s;
-  transition: 0.8s cubic-bezier(0.52, 0.01, 0.16, 1) 0.35s; }
+  transition: 0.8s cubic-bezier(0.52, 0.01, 0.16, 1) 0.35s;
+  position: relative; }
 
 .home-bg {
   -webkit-transition: 0.25s cubic-bezier(0.52, 0.01, 0.16, 1);
@@ -782,7 +784,7 @@ iframe {
 .pos-a-center {
   position: absolute;
   left: 50%;
-  top: 33%; }
+  top: 42%; }
 
 .home-video-mask .letters[data-active-letter="n"] ul.letter-n {
   pointer-events: auto; }
@@ -810,7 +812,7 @@ iframe {
   height: 35vh; }
 
 .home-video-mask .letter-n li:nth-child(2) {
-  left: 17.6vw;
+  left: 17.3vw;
   -webkit-transform: skew(-40deg);
   -moz-transform: skew(-40deg);
   -o-transform: skew(-40deg);
@@ -820,11 +822,11 @@ iframe {
   height: 35vh; }
 
 .home-video-mask .letter-n li:nth-child(3) {
-  top: 35vh;
+  top: 34vh;
   left: 8.7vw;
   position: absolute;
   background-color: #272725;
-  width: 17.6vw;
+  width: 17.8vw;
   height: 40vh; }
 
 .home-video-mask .letters li {
@@ -1006,7 +1008,8 @@ li:nth-child(3)::before {
   margin-left: -10%; }
 
 .title {
-  height: 11%; }
+  margin-bottom: 1rem;
+  height: 13%; }
   .title p {
     margin: 0;
     letter-spacing: 4px; }
@@ -1024,7 +1027,7 @@ li:nth-child(3)::before {
     margin: 0;
     width: 80%;
     margin-left: auto;
-    font-size: 1rem; }
+    font-size: 1.2rem; }
 
 .skills h3 {
   font-size: 2rem;
@@ -1112,28 +1115,28 @@ li:nth-child(3)::before {
   text-align: center; }
 
 .blood_pressure {
-  width: 75%;
-  height: 70%;
+  width: 69%;
+  height: 80%;
   position: absolute;
-  top: 5%;
+  top: 0%;
   left: 7%;
   background-image: url(../img/bloodpressure.jpg);
   background-size: cover; }
 
 .dulce_vicio {
-  width: 75%;
-  height: 70%;
+  width: 69%;
+  height: 80%;
   position: absolute;
-  top: 5%;
+  top: 0%;
   left: 7%;
   background-image: url(../img/dulce_vicio.jpg);
   background-size: cover; }
 
 .blog_project {
-  width: 75%;
-  height: 70%;
+  width: 69%;
+  height: 80%;
   position: absolute;
-  top: 5%;
+  top: 0%;
   left: 7%;
   background-image: url(../img/blog.jpg);
   background-size: cover; }
@@ -1142,10 +1145,10 @@ li:nth-child(3)::before {
   background-color: #f4f4f4;
   position: absolute;
   bottom: 0;
-  top: 20%;
+  top: 17%;
   right: 7%;
-  width: 30%;
-  height: 65%; }
+  width: 27%;
+  height: 77%; }
   .smaller_rectangle .title_div {
     padding: 33px 0 0 33px; }
   .smaller_rectangle p {

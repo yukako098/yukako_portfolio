@@ -40,8 +40,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">01.</p>
                 </div>
-                <a href="#top" class="sidebar_a" onclick="closeNav(), pageChange(0)">
-                    <!-- data-menuanchor="top" -->
+                <a href="#top" class="sidebar_a" onclick="closeNav()">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Top</h4>
                             <p class="sidebar_description">- Back to Top page.</p>
@@ -52,8 +51,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">02.</p>
                 </div>
-                <a href="#about-me" class="sidebar_a" onclick="closeNav(), pageChange(1)">
-                    <!-- data-menuanchor="about-me" -->
+                <a href="#about-me" class="sidebar_a" onclick="closeNav()">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">About</h4>
                             <p class="sidebar_description">- INTRODUCE MYSELF.</p>
@@ -64,8 +62,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">03.</p>
                 </div>
-                <a href="#granma"  class="sidebar_a" onclick="closeNav(), pageChange(2)">
-                    <!-- data-menuanchor="granma" -->
+                <a href="#granma"  class="sidebar_a" onclick="closeNav()">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Project</h4>
                             <p class="sidebar_description">- HERE'S WHAT'S BEEN DOING.</p>
@@ -76,8 +73,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">04.</p>
                 </div>
-                <a href="#getInTouch"  class="sidebar_a" onclick="closeNav(), pageChange(3)">
-                    <!-- data-menuanchor="getInTouch" -->
+                <a href="#getInTouch"  class="sidebar_a" onclick="closeNav()">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Contact</h4>
                             <p class="sidebar_description">- I'D LOVE TO HEAR FROM YOU.</p>
@@ -123,7 +119,7 @@
             </section>
             <section id="about"class="section page">
                 <div class="container">
-                    <div class="wrapper pos-a-t-l full-size" data-state="1" data-front-state="covered">
+                    <div class="wrapper full-size" data-state="1" data-front-state="covered">
                         <div class="blend-multiply pos-a-t-l full-size home-vid-mask-wrap">
                             <div class="home-vid-bg-imgs pos-a-t-l full-size js-monitor-home-case" data-active-case="14"></div>
 
@@ -138,10 +134,6 @@
                                 title="YouTube video player"
                                 width="1465"
                                 height="768" src="https://videos.pexels.com/videos/water-crashing-over-the-rocks-1093662?mute=1"></iframe>
-                                <!-- <video width="100%" autoplay="autoplay">
-                                    <source src="./img/test.mp4" type="video/mp4">
-                                    Your browser does not support HTML5 video.
-                                </video> -->
                             </div>
                             <div class="blend-screen pos-a-t-l full-size home-video-mask">
                                 <div class="letters pos-a-center">
@@ -155,8 +147,8 @@
                         </div>
 
                         <div class="type-wrap pos-a-t-l white-text js-monitor-home-state" data-home-state="default" data-active="on">
-                            <div class="flex-vert-center">
-                                <div class="overflow-animate-wrap title-wrap title">
+                            <div class="flex-vert-center p-relative">
+                                <div class="overflow-animate-wrap title-wrap title p-relative">
                                     <p>Front-end Developer</p>
                                     <h2 class="medium pr-case-title">
                                   Yukako Sunabe
@@ -186,7 +178,7 @@
                 </div>
             </section>
             <section id="project1" class="section page">
-                <div class="container">
+                <div class="container p-relative">
                     <div class="blood_pressure"></div>
                     <div class="smaller_rectangle">
                         <div class="title_div" data-delighter>
@@ -215,7 +207,7 @@
                 </div>
             </section>
             <section id="project2" class="section page">
-                <div class="container">
+                <div class="container p-relative">
                     <div class="dulce_vicio"></div>
                     <div class="smaller_rectangle">
                         <div class="title_div">
@@ -242,7 +234,7 @@
                 </div>
             </section>
             <section id="project3" class="section page">
-                <div class="container">
+                <div class="container p-relative">
                     <div class="blog_project"></div>
                     <div class="smaller_rectangle">
                         <div class="title_div">
@@ -310,15 +302,16 @@
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 menu: '.sidebar_menu',
-                // lockAnchors: true,
                 scrollingSpeed: 1000,
                 anchors: ['top', 'about-me', 'granma', 'dulce', 'wp', 'getInTouch'],
-                css3: true,
-                paddingTop: '10vh',
+                // paddingTop: '6rem',
                  loopBottom: true,
-                 //paddingBottom: '50px',
-                // Design
                 sectionsColor: ['#fedc3d', '#01abaa', '#fea680', '#57bc90', '#f7882f', '#ffffff'],
+                verticalCentered: false,
+                css3: false,
+                setAllowScrolling: false,
+                animateAnchor: false,
+                scrollOverflow: true,
 
                 onLeave:function(anchorLink, index){
                     if (index == 1) {
@@ -345,8 +338,10 @@
                         $(".header_fullpage").css("background-color", "#ffffff");
                     }
 
-        }
+                }
             });
+            var h = ($(".section").height());
+            $('.section, .fp-tableCell').css('height', h - 100);
         });
     </script>
 </body>

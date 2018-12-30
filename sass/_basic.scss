@@ -49,11 +49,11 @@ a {
     transition: margin-left 0.5s;
 }
 
-.container {
-    padding-top: 2rem !important;
-}
-
 /* font awesome */
 .fab {
     font-size: 1.2em;
+}
+
+.p-relative {
+    position: relative;
 }

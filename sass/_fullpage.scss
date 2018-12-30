@@ -1,6 +1,11 @@
-// .fullpage-wrapper {
-//     margin-top: 10vh;
-// }
+#home,
+#about,
+#project1,
+#project2,
+#project3,
+#contact {
+    padding-top: 6rem;
+}
 .section {
     text-align: left;
     font-size: 100%;
@@ -59,12 +64,13 @@
     transform: rotate(90deg);
 }
 
-.footer_fullpage,
 .header_fullpage {
     background: #fedc3d;
-    width: 80%;
-    z-index: 2;
+    z-index: 99;
     position: fixed;
+    height: 11vh;
+    width: 100%;
+    color: black;
 }
 
 .fp-viewing-top .header_fullpage {
@@ -91,15 +97,8 @@
     background: #ffffff;
 }
 
-.header_fullpage {
-    top: 0;
-}
-
-.footer_fullpage {
-    position: fixed;
-    bottom: 0;
-    height: 5%;
-    width: 100%;
+.fp-scroller {
+    height: 100%;
 }
 
 .container {
