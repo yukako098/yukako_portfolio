@@ -62,7 +62,7 @@
                 <div class="sidebar_num">
                     <p class="num_rotate">03.</p>
                 </div>
-                <a href="#granma"  class="sidebar_a" onclick="closeNav()">
+                <a href="#wp"  class="sidebar_a" onclick="closeNav()">
                     <div class="sidebar_menu_num">
                         <h3 class="sidebar_title">Project</h4>
                             <p class="sidebar_description">- HERE'S WHAT'S BEEN DOING.</p>
@@ -177,10 +177,63 @@
 
                 </div>
             </section>
+            <section id="project3" class="section page">
+                <div class="container p-relative">
+                    <div class="blog_project slide-right3"></div>
+                    <div class="smaller_rectangle slide-left3">
+                        <div class="title_div">
+                            <p>TITLE</p>
+                            <h3>Dulce Vicio's Blog</h3>
+                        </div>
+                        <div class="main_tech">
+                            <p>MAIN TECH</p>
+                            <ul>
+                                <li>WordPress</li>
+                                <li>Bootstrap</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <a href="./project1.html" target="_blank" rel="noopener noreferrer">
+                            <button class="view_site_btn">
+                                CHECK DESCRIPTION
+                                <img src="./img/right-arrow.png" alt="right-arrow" class="horizontal">
+                                <!-- <i class="fas fa-circle-notch circle"></i> -->
+                            </button>
+
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="project2" class="section page">
+                <div class="container p-relative">
+                    <div class="dulce_vicio slide-right2"></div>
+                    <div class="smaller_rectangle slide-left2">
+                        <div class="title_div">
+                            <p>TITLE</p>
+                            <h3>Dulce Vicio</h3>
+                        </div>
+                        <div class="main_tech">
+                            <p>MAIN TECH</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>SASS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <a href="./project1.html" target="_blank" rel="noopener noreferrer">
+                            <button class="view_site_btn">
+                                CHECK DESCRIPTION
+                                <img src="./img/right-arrow.png" alt="right-arrow" class="horizontal">
+                                <!-- <i class="fas fa-circle-notch circle"></i> -->
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
             <section id="project1" class="section page">
                 <div class="container p-relative">
-                    <div class="blood_pressure"></div>
-                    <div class="smaller_rectangle">
+                    <div class="blood_pressure slide-right"></div>
+                    <div class="smaller_rectangle slide-left">
                         <div class="title_div" data-delighter>
                             <p>TITLE</p>
                             <h3>Granma's Blood Pressure</h3>
@@ -200,60 +253,6 @@
                             CHECK DESCRIPTION
                             <img src="./img/right-arrow.png" alt="right-arrow" class="horizontal">
                             <!-- <i class="fas fa-circle-notch circle"></i> -->
-                            </button>
-
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section id="project2" class="section page">
-                <div class="container p-relative">
-                    <div class="dulce_vicio"></div>
-                    <div class="smaller_rectangle">
-                        <div class="title_div">
-                            <p>TITLE</p>
-                            <h3>Dulce Vicio</h3>
-                        </div>
-                        <div class="main_tech">
-                            <p>MAIN TECH</p>
-                            <ul>
-                                <li>HTML</li>
-                                <li>SASS</li>
-                                <li>JavaScript</li>
-                            </ul>
-                        </div>
-                        <a href="./project1.html" target="_blank" rel="noopener noreferrer">
-                            <button class="view_site_btn">
-                                CHECK DESCRIPTION
-                                <img src="./img/right-arrow.png" alt="right-arrow" class="horizontal">
-                                <!-- <i class="fas fa-circle-notch circle"></i> -->
-                            </button>
-
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section id="project3" class="section page">
-                <div class="container p-relative">
-                    <div class="blog_project"></div>
-                    <div class="smaller_rectangle">
-                        <div class="title_div">
-                            <p>TITLE</p>
-                            <h3>Dulce Vicio's Blog</h3>
-                        </div>
-                        <div class="main_tech">
-                            <p>MAIN TECH</p>
-                            <ul>
-                                <li>WordPress</li>
-                                <li>Bootstrap</li>
-                                <li>JavaScript</li>
-                            </ul>
-                        </div>
-                        <a href="./project1.html" target="_blank" rel="noopener noreferrer">
-                            <button class="view_site_btn">
-                                CHECK DESCRIPTION
-                                <img src="./img/right-arrow.png" alt="right-arrow" class="horizontal">
-                                <!-- <i class="fas fa-circle-notch circle"></i> -->
                             </button>
 
                         </a>
@@ -303,10 +302,10 @@
             $('#fullpage').fullpage({
                 menu: '.sidebar_menu',
                 scrollingSpeed: 1000,
-                anchors: ['top', 'about-me', 'granma', 'dulce', 'wp', 'getInTouch'],
+                anchors: ['top', 'about-me', 'wp', 'dulce', 'granma', 'getInTouch'],
                 // paddingTop: '6rem',
                  loopBottom: true,
-                sectionsColor: ['#fedc3d', '#01abaa', '#fea680', '#57bc90', '#f7882f', '#ffffff'],
+                sectionsColor: ['#fedc3d', '#01abaa', '#f7882f', '#57bc90', '#fea680', '#ffffff'],
                 verticalCentered: false,
                 css3: false,
                 setAllowScrolling: false,
@@ -323,7 +322,7 @@
                         // letter_y();
                     }
                     if (index == 3) {
-                        $(".header_fullpage").css("background-color", "#fea680");
+                        $(".header_fullpage").css("background-color", "#f7882f");
 
                     }
                     if (index == 4) {
@@ -331,7 +330,7 @@
 
                     }
                     if (index == 5) {
-                        $(".header_fullpage").css("background-color", "#f7882f");
+                        $(".header_fullpage").css("background-color", "#fea680");
 
                     }
                     if (index == 6) {

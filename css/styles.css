@@ -641,10 +641,10 @@ a {
 .title-wrap,
 .between-name-and-skills,
 .skills {
-  margin-top: 200%;
-  -webkit-transition: all 1.1s ease-in;
-  -o-transition: all 1.1s ease-in;
-  transition: all 1.1s ease-in; }
+  margin-top: 100%;
+  -webkit-transition: all 1.5s ease-in;
+  -o-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in; }
 
 .fp-viewing-about-me .title-wrap,
 .fp-viewing-about-me .between-name-and-skills,
@@ -1141,6 +1141,46 @@ li:nth-child(3)::before {
   background-image: url(../img/blog.jpg);
   background-size: cover; }
 
+.fp-viewing-wp .slide-right3,
+.fp-viewing-dulce .slide-right2,
+.fp-viewing-granma .slide-right {
+  -webkit-animation: slide-right 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
+  animation: slide-right 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) both; }
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%); }
+  100% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px); } }
+.fp-viewing-wp .slide-left3,
+.fp-viewing-dulce .slide-left2,
+.fp-viewing-granma .slide-left {
+  -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(1000%);
+    transform: translateX(1000%); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(1000%);
+    transform: translateX(1000%); }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 .smaller_rectangle {
   background-color: #f4f4f4;
   position: absolute;
@@ -1149,6 +1189,9 @@ li:nth-child(3)::before {
   right: 7%;
   width: 27%;
   height: 77%; }
+  .smaller_rectangle:hover {
+    -webkit-filter: brightness(58%);
+    filter: brightness(58%); }
   .smaller_rectangle .title_div {
     padding: 33px 0 0 33px; }
   .smaller_rectangle p {
@@ -1273,9 +1316,6 @@ li:nth-child(3)::before {
 
 .pbg {
   background-color: white !important; }
-
-#projects {
-  margin-top: 98.08px; }
 
 .project-sidenav {
   -ms-flex-item-align: center !important;

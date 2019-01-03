@@ -56,13 +56,15 @@ window.onload = function() {
 function openNav() {
     document.getElementById("mySidenav").style.display = "block";
     document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("main").style.display = "none";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.display = "block";
 }
 
-function checkId() {
-    var href = document.getElementsByTagName("a")[1].getAttribute("href");
-    console.log(href);
-}
+// function checkId() {
+//     var href = document.getElementsByTagName("a")[1].getAttribute("href");
+//     console.log(href);
+// }
