@@ -63,8 +63,3 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.display = "block";
 }
-
-// function checkId() {
-//     var href = document.getElementsByTagName("a")[1].getAttribute("href");
-//     console.log(href);
-// }

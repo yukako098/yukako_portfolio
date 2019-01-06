@@ -26,6 +26,13 @@
     font-weight: lighter;
 }
 
+// TOP SECTION
+@mixin loading_img($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+
 // ABOUT SECTION Y
 @mixin pos-a-t-l {
     position: absolute;

@@ -1,5 +1,5 @@
 .header_container {
-    height: 100px;
+    height: 140px;
     padding: 0;
     left: 0;
     width: 100%;
@@ -28,11 +28,18 @@
     }
 
     .to_sidenav {
-        align-self: flex-end;
+        align-self: center;
     }
 
     .to_sidenav + .to_sidenav {
         margin-left: 18px;
+    }
+
+    .logo_a {
+        width: 150px;
+        img {
+            width: 100%;
+        }
     }
 
     a {
