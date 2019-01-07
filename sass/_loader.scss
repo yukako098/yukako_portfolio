@@ -2,11 +2,19 @@
     display: none;
     position: fixed;
     width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
+    // height: 100%;
+    // top: 0px;
+    // left: 0px;
     background-color: $yellow;
-    z-index: 1;
+    // z-index: 1;
+}
+
+.loader {
+    width: 40%;
+    @include for-desktop-up {
+        width: 30%;
+    }
+    @include centralize;
 }
 
 .loading {
@@ -15,13 +23,16 @@
     z-index: 2;
 
     .sun {
-        @include loading_img(35%, 35%);
+        @include loading_img(33.5vh, 0);
+        @include for-phone-only {
+            @include loading_img(33.5vh, 0);
+        }
     }
 
     .slide-fwd-center {
-        -webkit-animation: slide-fwd-center 3.5s
+        -webkit-animation: slide-fwd-center 2.5s
             cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-        animation: slide-fwd-center 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        animation: slide-fwd-center 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
             infinite both;
     }
 
@@ -37,13 +48,27 @@
     }
 
     .orange {
-        @include loading_img(38.5%, 36.5%);
+        @include loading_img(36.5vh, 3vw);
+        @include for-desktop-up {
+            @include loading_img(36.5vh, 2vw);
+        }
+        @include for-phone-only {
+            @include loading_img(36.5vh, 4vw);
+        }
     }
 
     .hide_rect {
         background-color: $yellow;
-        width: 16%;
+        width: 45vw;
         height: 14%;
-        @include loading_img(54%, 41%);
+        @include for-desktop-up {
+            width: 35vw;
+            left: 0;
+        }
+        @include loading_img(50vh, 2vw);
+        @include for-phone-only {
+            width: 80%;
+            @include loading_img(50vh, 11vw);
+        }
     }
 }

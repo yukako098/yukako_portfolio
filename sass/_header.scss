@@ -31,6 +31,10 @@
         align-self: center;
     }
 
+    .pc {
+        @include pc-only;
+    }
+
     .to_sidenav + .to_sidenav {
         margin-left: 18px;
     }

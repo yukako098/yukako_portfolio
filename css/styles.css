@@ -454,7 +454,8 @@ a {
   height: 100%; }
 
 .container {
-  height: 100%; }
+  height: 100%;
+  padding-top: 2%; }
 
 .sidenav {
   display: none;
@@ -576,6 +577,11 @@ a {
   .header_container .to_sidenav {
     -ms-flex-item-align: center;
     align-self: center; }
+  .header_container .pc {
+    display: block !important; }
+    @media (max-width: 599px) {
+      .header_container .pc {
+        display: none !important; } }
   .header_container .to_sidenav + .to_sidenav {
     margin-left: 18px; }
   .header_container .logo_a {
@@ -1590,11 +1596,19 @@ li:nth-child(3)::before {
   display: none;
   position: fixed;
   width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background-color: #fedc3d;
-  z-index: 1; }
+  background-color: #fedc3d; }
+
+.loader {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  @media (min-width: 1200px) {
+    .loader {
+      width: 30%; } }
 
 .loading {
   height: 100%;
@@ -1602,11 +1616,16 @@ li:nth-child(3)::before {
   z-index: 2; }
   .loading .sun {
     position: absolute;
-    top: 35%;
-    left: 35%; }
+    top: 33.5vh;
+    left: 0; }
+    @media (max-width: 599px) {
+      .loading .sun {
+        position: absolute;
+        top: 33.5vh;
+        left: 0; } }
   .loading .slide-fwd-center {
-    -webkit-animation: slide-fwd-center 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
-    animation: slide-fwd-center 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
+    -webkit-animation: slide-fwd-center 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+    animation: slide-fwd-center 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
 @-webkit-keyframes slide-fwd-center {
   0% {
     opacity: 0;
@@ -1627,15 +1646,35 @@ li:nth-child(3)::before {
     transform: scale(1, 1); } }
   .loading .orange {
     position: absolute;
-    top: 38.5%;
-    left: 36.5%; }
+    top: 36.5vh;
+    left: 3vw; }
+    @media (min-width: 1200px) {
+      .loading .orange {
+        position: absolute;
+        top: 36.5vh;
+        left: 2vw; } }
+    @media (max-width: 599px) {
+      .loading .orange {
+        position: absolute;
+        top: 36.5vh;
+        left: 4vw; } }
   .loading .hide_rect {
     background-color: #fedc3d;
-    width: 16%;
+    width: 45vw;
     height: 14%;
     position: absolute;
-    top: 54%;
-    left: 41%; }
+    top: 50vh;
+    left: 2vw; }
+    @media (min-width: 1200px) {
+      .loading .hide_rect {
+        width: 35vw;
+        left: 0; } }
+    @media (max-width: 599px) {
+      .loading .hide_rect {
+        width: 80%;
+        position: absolute;
+        top: 50vh;
+        left: 11vw; } }
 
 
 

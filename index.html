@@ -25,20 +25,26 @@
     </head>
 
     <body id="body">
-        <section id="loader-bg" class="loading">
-            <div class="loader">
-                <img
-                    src="./img/sun.png"
-                    alt="sun"
-                    class="sun slide-fwd-center"
-                />
-                <img
-                    src="./img/orange.png"
-                    alt="orange"
-                    class="orange rotate-anime"
-                />
-                <div class="hide_rect"></div>
-                <img src="./img/wave.png" alt="wave" class="hide_rect waves" />
+        <section id="loader-bg">
+            <div class="loading">
+                <div class="loader">
+                    <img
+                        src="./img/sun.png"
+                        alt="sun"
+                        class="sun slide-fwd-center"
+                    />
+                    <img
+                        src="./img/orange.png"
+                        alt="orange"
+                        class="orange rotate-anime"
+                    />
+                    <div class="hide_rect"></div>
+                    <img
+                        src="./img/wave.png"
+                        alt="wave"
+                        class="hide_rect waves"
+                    />
+                </div>
             </div>
         </section>
         <!-- BACKGROUND COLOR OF PARTICULAR SLIDE -->
@@ -134,7 +140,7 @@
                                 <div class="three"></div>
                             </a>
                         </li>
-                        <li class="to_sidenav" onclick="openNav()">
+                        <li class="to_sidenav pc" onclick="openNav()">
                             <p class="header_logo header_menu">MENU</p>
                         </li>
                     </ul>
@@ -143,30 +149,30 @@
             <div id="fullpage">
                 <section id="home" class="section page">
                     <div class="container">
-                        <!-- <section class="top_page_section"> -->
-                        <!-- <div class="name">
-                            <ul>
-                                <li>HELLO!</li>
-                                <li>I am</li>
-                                <li>Yukako.</li>
-                            </ul>
-                        </div>
-                        <div class="animations">
-                            <img
-                                src="./img/sun.png"
-                                alt="sun"
-                                class="rotate-anime"
-                            />
-                            <div class="hide_rectangle"></div>
-                            <img
-                                src="./img/waves.png"
-                                alt="waves"
-                                class="waves"
-                            />
-                            <img src="./img/tree1.png" alt="tree1" />
-                            <img src="./img/tree2.png" alt="tree2" />
-                        </div> -->
-                        <section class="main_section">
+                        <section class="top_page_section">
+                            <div class="name">
+                                <ul>
+                                    <li>HELLO!</li>
+                                    <li>I am</li>
+                                    <li>Yukako.</li>
+                                </ul>
+                            </div>
+                            <div class="animations">
+                                <img
+                                    src="./img/sun.png"
+                                    alt="sun"
+                                    class="rotate-anime"
+                                />
+                                <div class="hide_rectangle"></div>
+                                <img
+                                    src="./img/waves.png"
+                                    alt="waves"
+                                    class="waves"
+                                />
+                                <img src="./img/tree1.png" alt="tree1" />
+                                <img src="./img/tree2.png" alt="tree2" />
+                            </div>
+                            <!-- <section class="main_section">
                             <h1>
                                 <p
                                     class="typewrite"
@@ -176,8 +182,8 @@
                                     <span class="wrap"></span>
                                 </p>
                             </h1>
+                        </section> -->
                         </section>
-                        <!-- </section> -->
                     </div>
                 </section>
                 <section id="about" class="section page">
@@ -405,7 +411,6 @@
             </div>
         </div>
 
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
         <!-- LOADING PAGE -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>
@@ -413,26 +418,15 @@
                 var h = $(window).height();
 
                 $("#main").css("display", "none");
-                $("#header").css("display", "none");
                 $("#loader-bg , .loader")
                     .height(h)
                     .css("display", "block");
             });
 
             $(window).load(function() {
-                //全ての読み込みが完了したら実行
-                $("#loader-bg")
-                    .delay(3000)
-                    .fadeOut(2900);
-                $(".loader")
-                    .delay(2500)
-                    .fadeOut(2000);
+                $("#loader-bg").fadeOut(2900);
+                $(".loader").fadeOut(2000);
                 $("#main")
-                    .delay(2500)
-                    .fadeIn(2900)
-                    .css("display", "block");
-                $("#header")
-                    .delay(3000)
                     .fadeIn(2900)
                     .css("display", "block");
             });
