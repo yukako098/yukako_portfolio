@@ -1,5 +1,5 @@
 .header_container {
-    height: 140px;
+    height: 100px;
     padding: 0;
     left: 0;
     width: 100%;
@@ -12,12 +12,8 @@
 
     ul {
         display: flex;
-        flex-flow: row wrap;
+        // flex-flow: row wrap;
         list-style-type: none;
-    }
-
-    .top_page {
-        margin-right: auto;
     }
 
     .header_logo {
@@ -36,14 +32,11 @@
     }
 
     .to_sidenav + .to_sidenav {
-        margin-left: 18px;
+        margin-left: 8px;
     }
 
-    .logo_a {
-        width: 150px;
-        img {
-            width: 100%;
-        }
+    img {
+        width: 100%;
     }
 
     a {

@@ -550,7 +550,7 @@ a {
     font-family: "Francois One", sans-serif; }
 
 .header_container {
-  height: 140px;
+  height: 100px;
   padding: 0;
   left: 0;
   width: 100%;
@@ -562,13 +562,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
     list-style-type: none; }
-  .header_container .top_page {
-    margin-right: auto; }
   .header_container .header_logo {
     cursor: pointer;
     display: inline-block;
@@ -576,6 +570,7 @@ a {
     font-size: 2.5rem; }
   .header_container .to_sidenav {
     -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center; }
   .header_container .pc {
     display: block !important; }
@@ -583,11 +578,9 @@ a {
       .header_container .pc {
         display: none !important; } }
   .header_container .to_sidenav + .to_sidenav {
-    margin-left: 18px; }
-  .header_container .logo_a {
-    width: 150px; }
-    .header_container .logo_a img {
-      width: 100%; }
+    margin-left: 8px; }
+  .header_container img {
+    width: 100%; }
   .header_container a {
     width: 50px;
     text-decoration: none; }
@@ -1102,16 +1095,16 @@ li:nth-child(3)::before {
   padding-right: 25px;
   overflow: hidden; }
 
-.white-text a,
-.white-text p,
-.white-text h1,
-.white-text h2,
-.white-text h3,
-.white-text h4,
-.white-text h5,
-.white-text h6,
-.white-text li {
-  color: #f2f2f2; }
+.black_text a,
+.black_text p,
+.black_text h1,
+.black_text h2,
+.black_text h3,
+.black_text h4,
+.black_text h5,
+.black_text h6,
+.black_text li {
+  color: #000; }
 
 .overflow-animate-wrap > * {
   -webkit-transition: 0.65s cubic-bezier(0.62, 0.02, 0.34, 1);
@@ -1250,56 +1243,6 @@ li:nth-child(3)::before {
     -webkit-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%; }
-@-webkit-keyframes horizontal_6973 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  4.41177% {
-    -webkit-transform: translate(35px, 0);
-    transform: translate(35px, 0); }
-  8.82353% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  13.23529% {
-    -webkit-transform: translate(35px, 0);
-    transform: translate(35px, 0); }
-  17.64706% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  22.05882% {
-    -webkit-transform: translate(35px, 0);
-    transform: translate(35px, 0); }
-  26.47059% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
-@keyframes horizontal_6973 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  4.41177% {
-    -webkit-transform: translate(35px, 0);
-    transform: translate(35px, 0); }
-  8.82353% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  13.23529% {
-    -webkit-transform: translate(35px, 0);
-    transform: translate(35px, 0); }
-  17.64706% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  22.05882% {
-    -webkit-transform: translate(35px, 0);
-    transform: translate(35px, 0); }
-  26.47059% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
   .smaller_rectangle .fas {
     font-size: 2rem;
     color: black; }
@@ -1341,6 +1284,7 @@ li:nth-child(3)::before {
 
 .project-sidenav {
   -ms-flex-item-align: center !important;
+  -ms-grid-row-align: center !important;
   align-self: center !important; }
 
 .project1_header {
@@ -1413,6 +1357,7 @@ li:nth-child(3)::before {
     font-family: "Francois One", sans-serif;
     color: white; }
   .left_fixed a {
+    width: 100%;
     color: white; }
     .left_fixed a::after {
       height: 0; }
@@ -1528,7 +1473,7 @@ li:nth-child(3)::before {
     margin: 0; }
   .contact_left button {
     width: 100%;
-    background-color: white;
+    background-color: #a987f1;
     border-top: 1px solid #272725;
     border-bottom: 1px solid #272725;
     border-left: none;

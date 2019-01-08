@@ -364,16 +364,16 @@ iframe {
     padding-right: 25px;
     overflow: hidden;
 }
-.white-text a,
-.white-text p,
-.white-text h1,
-.white-text h2,
-.white-text h3,
-.white-text h4,
-.white-text h5,
-.white-text h6,
-.white-text li {
-    color: #f2f2f2;
+.black_text a,
+.black_text p,
+.black_text h1,
+.black_text h2,
+.black_text h3,
+.black_text h4,
+.black_text h5,
+.black_text h6,
+.black_text li {
+    color: #000;
 }
 .overflow-animate-wrap > * {
     -webkit-transition: 0.65s cubic-bezier(0.62, 0.02, 0.34, 1);
