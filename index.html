@@ -132,13 +132,18 @@
                                         alt="logo"
                                         class="logo"
                                     />
-                                    <ul>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul> </a
-                            ></span>
+                                    <div class="pos-a-t-l full-size">
+                                        <ul
+                                            class="full-size p-relative hover-ul"
+                                        >
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </span>
                         </li>
                         <li class="to_sidenav">
                             <a href="#" class="nav" onclick="openNav()">
@@ -158,11 +163,11 @@
                     <div class="container">
                         <section class="top_page_section">
                             <div class="name">
-                                <ul>
+                                <!-- <ul>
                                     <li>HELLO!</li>
                                     <li>I am</li>
                                     <li>Yukako.</li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="animations">
                                 <!-- <img
@@ -421,22 +426,22 @@
         <!-- LOADING PAGE -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>
-            $(function() {
-                var h = $(window).height();
+            // $(function() {
+            //     var h = $(window).height();
 
-                $("#main").css("display", "none");
-                $("#loader-bg , .loader")
-                    .height(h)
-                    .css("display", "block");
-            });
+            //     $("#main").css("display", "none");
+            //     $("#loader-bg , .loader")
+            //         .height(h)
+            //         .css("display", "block");
+            // });
 
-            $(window).load(function() {
-                $("#loader-bg").fadeOut(2900);
-                $(".loader").fadeOut(2000);
-                $("#main")
-                    .fadeIn(2900)
-                    .css("display", "block");
-            });
+            // $(window).load(function() {
+            //     $("#loader-bg").fadeOut(2900);
+            //     $(".loader").fadeOut(2000);
+            //     $("#main")
+            //         .fadeIn(2900)
+            //         .css("display", "block");
+            // });
         </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>

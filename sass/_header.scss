@@ -23,6 +23,85 @@
         font-size: $fontMid;
     }
 
+    .hover-ul {
+        transition-duration: 1s;
+        &:hover li:nth-child(1) {
+            position: absolute;
+            background-color: black;
+            width: 1.3vw;
+            height: 4vh;
+            -webkit-transition: 0.25s ease-in-out 0s;
+            transition: 0.25s ease-in-out 0s;
+        }
+
+        li:nth-child(1)::before {
+            -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+            // transform: translateY(4vh);
+        }
+
+        &:hover li:nth-child(2) {
+            position: absolute;
+            background-color: black;
+            width: 1vw;
+            height: 4vh;
+            transform: rotate(90deg);
+            transform-origin: bottom;
+            top: -0.4vw;
+            -webkit-transition: 0.25s ease-in-out 0s;
+            transition: 0.25s ease-in-out 0s;
+        }
+
+        li:nth-child(2)::before {
+            -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+            // transform: translateY(4vh);
+        }
+
+        &:hover li:nth-child(3) {
+            position: absolute;
+            background-color: black;
+            width: 0.7vw;
+            height: 5.2vh;
+            right: 0.5vw;
+            -webkit-transition: 0.25s ease-in-out 0.25s;
+            transition: 0.25s ease-in-out 0.25s;
+        }
+
+        li:nth-child(3)::before {
+            -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+            // transform: translateY(4vh);
+        }
+
+        &:hover li:nth-child(4) {
+            position: absolute;
+            background-color: black;
+            width: 1vw;
+            height: 3vh;
+            transform: rotate(52deg);
+            transform-origin: top;
+            bottom: 1.1vw;
+            right: 0;
+            -webkit-transition: 0.25s ease-in-out 0.5s;
+            transition: 0.25s ease-in-out 0.5s;
+        }
+
+        li:nth-child(4)::before {
+            -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+            -webkit-transform-origin: 0% 100%;
+            transform-origin: 0% 100%;
+            // transform: translateY(4vh);
+        }
+    }
+
     .to_sidenav {
         align-self: center;
     }
