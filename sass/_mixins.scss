@@ -60,14 +60,28 @@
 }
 
 // PROJECTS
-@mixin bigger_rectangle($url) {
-    width: 69%;
-    height: 80%;
+@mixin bigger_rectangle {
+    width: 61%;
+    height: 67%;
     position: absolute;
-    top: 0%;
+    top: 1%;
     left: 7%;
-    background-image: $url;
+}
+
+@mixin mockup_iphone($top, $right, $width, $height) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    width: $width;
+    height: $height;
     background-size: cover;
+}
+
+@mixin over_hidden($width, $height){
+    overflow: hidden;
+    position: absolute;
+    width: $width;
+    height: $height;
 }
 
 @mixin project_tech_name {

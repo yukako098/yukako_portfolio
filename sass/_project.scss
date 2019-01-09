@@ -1,13 +1,195 @@
-.blood_pressure {
-    @include bigger_rectangle(url(../img/bloodpressure.jpg));
+.max_height {
+    height: 100%;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 
 .dulce_vicio {
-    @include bigger_rectangle(url(../img/dulce_vicio.jpg));
+    @include bigger_rectangle;
+
+    img {
+        width: 100%;
+    }
 }
 
-.blog_project {
-    @include bigger_rectangle(url(../img/blog.jpg));
+.over_hidden_imac {
+    @include over_hidden(55.5vw, 31vw);
+    top: 4.6vh;
+    left: 2.8vw;
+}
+.over_hidden_imac:hover .description_rect {
+    top: 0;
+}
+
+.description_rect {
+    display: flex;
+    position: absolute;
+    top: 32vw;
+    left: 0;
+    width: 55.5vw;
+    height: 31vw;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 1.1s ease;
+
+    .title_main {
+        width: 40%;
+    }
+
+    .description {
+        width: 55%;
+        padding-top: 33px;
+        padding-left: 5%;
+    }
+
+    .title_div {
+        padding: 33px 0 0 33px;
+    }
+    p {
+        font-family: "Playfair Display", serif;
+        color: black;
+        letter-spacing: 0.5em;
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    h3 {
+        margin-top: 2px;
+        margin-bottom: 0;
+        font-size: 38px;
+        @include project_tech_name;
+    }
+
+    .main_tech {
+        padding: 33px 0 9px 33px;
+    }
+
+    ul {
+        font-size: 22px;
+        @include project_tech_name;
+    }
+    .fas {
+        font-size: 2rem;
+        color: black;
+    }
+
+    .circle {
+        transform: rotate(-90deg);
+        padding-top: 3%;
+    }
+}
+
+.over_hidden_a {
+    @include over_hidden(12%, 8%);
+    border: 2px solid black;
+    bottom: 7%;
+    left: 33px;
+    color: black;
+    text-align: center;
+    @include without-underbar;
+}
+
+.launch {
+    margin: 10%;
+    z-index: 10;
+}
+
+.view_site_btn {
+    background-color: $lightgreen;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    padding: 0;
+    bottom: 0;
+    left: -100%;
+    transition: all 0.3s ease-in;
+}
+
+.over_hidden_a:hover .view_site_btn {
+    left: 0;
+}
+
+.smaller_rectangle {
+    @include mockup_iphone(17%, 14%, 19%, 77%);
+}
+
+.p1 {
+    background-image: url("../img/project1_iphone.png");
+}
+
+.p2 {
+    background-image: url("../img/project2_iphone.png");
+}
+
+.p3 {
+    background-image: url("../img/project3_iphone.png");
+}
+
+.over_hidden_phone {
+    @include over_hidden(16vw, 48vh);
+    right: 15.4vw;
+    bottom: 14.7vh;
+}
+
+.over_hidden_phone:hover .choice_btn {
+    top: 0;
+}
+
+.choice_btn {
+    @include mockup_iphone(48vh, 0vw, 16vw, 48vh);
+    transition: all 1.1s ease;
+    background-color: white;
+
+    h3 {
+        color: black;
+        margin: 0;
+        padding: 7%;
+        font-size: 2rem;
+    }
+}
+.over_hidden_a2 {
+    @include over_hidden(8vw, 5vh);
+    border: 2px solid black;
+    bottom: 7vw;
+    left: 1.4vw;
+    @include without-underbar;
+
+    .launch {
+        position: absolute;
+        top: 0;
+        left: 1vw;
+        color: black;
+        margin: 10%;
+        z-index: 10;
+    }
+}
+
+.iphone_btn {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background-color: $lightgreen;
+    padding: 2%;
+    border: none;
+    transition: all 0.3s ease-in;
+}
+
+.p3btn {
+    background-color: $orange;
+}
+
+.p1btn {
+    background-color: $smarkPink;
+}
+
+.over_hidden_a2:hover .iphone_btn {
+    left: 0;
 }
 
 .fp-viewing-wp .slide-right3,
@@ -65,121 +247,5 @@
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
-    }
-}
-
-.smaller_rectangle {
-    background-color: $white;
-    position: absolute;
-    bottom: 0;
-    top: 17%;
-    right: 7%;
-    width: 27%;
-    height: 77%;
-
-    &:hover {
-        filter: brightness(58%);
-    }
-
-    .title_div {
-        padding: 33px 0 0 33px;
-    }
-    p {
-        font-family: "Playfair Display", serif;
-        color: black;
-        letter-spacing: 0.5em;
-        font-size: 10px;
-        margin-bottom: 0px;
-    }
-
-    h3 {
-        margin-top: 2px;
-        margin-bottom: 0;
-        font-size: 38px;
-        @include project_tech_name;
-    }
-
-    .main_tech {
-        padding: 33px 0 9px 33px;
-    }
-
-    ul {
-        font-size: 22px;
-        @include project_tech_name;
-    }
-
-    a {
-        width: 91%;
-        position: absolute;
-        bottom: 13%;
-        padding-left: 9%;
-        @include without-underbar;
-    }
-
-    .horizontal {
-        padding-left: 10%;
-        animation: horizontal_6973 2.72s ease infinite;
-        transform-origin: 50% 50%;
-    }
-
-    // @keyframes horizontal_6973 {
-    //     0% {
-    //         transform: translate(0, 0);
-    //     }
-    //     4.41177% {
-    //         transform: translate(35px, 0);
-    //     }
-    //     8.82353% {
-    //         transform: translate(0, 0);
-    //     }
-    //     13.23529% {
-    //         transform: translate(35px, 0);
-    //     }
-    //     17.64706% {
-    //         transform: translate(0, 0);
-    //     }
-    //     22.05882% {
-    //         transform: translate(35px, 0);
-    //     }
-    //     26.47059% {
-    //         transform: translate(0, 0);
-    //     }
-    //     100% {
-    //         transform: translate(0, 0);
-    //     }
-    // }
-
-    .fas {
-        font-size: 2rem;
-        color: black;
-    }
-
-    .circle {
-        transform: rotate(-90deg);
-        padding-top: 3%;
-    }
-}
-
-.view_site_btn {
-    background-color: $white;
-    border-top: 1px solid $dark;
-    border-bottom: 1px solid $dark;
-    border-left: none;
-    border-right: none;
-    color: $dark;
-    text-align: center;
-    font-size: 0.8rem;
-    opacity: 0.5;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    width: 65%;
-    font-family: $francois;
-
-    &:hover {
-        opacity: 1;
     }
 }
