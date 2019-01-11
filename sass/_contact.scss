@@ -15,7 +15,6 @@
     vertical-align: middle;
 }
 
-<<<<<<< HEAD
 .over_hidden_letter {
     @include abs_t_l_w_h(39vh, 22vw, 55vw, 52vh);
     background-color: $purple;
@@ -38,61 +37,58 @@
 
 .letter_top {
     @include abs_t_l_w_h(0, 0, 100%, 50%);
-=======
-.contact_form {
-    position: absolute;
-    top: 39vh;
-    left: 22vw;
-    background-color: $purple;
-    width: 55vw;
-    height: 31vw;
-    color: black;
-    background-image: url(../img/contact.png);
-    background-size: cover;
-}
-
-.letter_top {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    top: 0;
-    left: 0;
->>>>>>> 4c3041805b978f6572375cb1a2aaf10b1b19aea2
-    padding-left: 5vw;
-    padding-top: 5vh;
-
-    h5 {
-        margin: 1% 0;
-        font-size: 4rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-        width: 30vw;
-        letter-spacing: 2px;
-        margin: 1% 0;
-<<<<<<< HEAD
-    }
-}
-
-.letter_bottom {
-    @include abs_w_h(100%, 40%);
-    top: 30vh;
-    padding-left: 5vw;
-    padding-top: 3vh;
-
-    .over_hidden_btn {
-        border: 2px solid black;
+    .contact_form {
+        position: absolute;
+        top: 39vh;
+        left: 22vw;
         background-color: $purple;
-        width: 100%;
+        width: 55vw;
+        height: 31vw;
+        color: black;
+        background-image: url(../img/contact.png);
+        background-size: cover;
     }
-}
 
-.over_hidden {
-    position: relative;
-    overflow: hidden;
-    width: 25%;
-=======
+    .letter_top {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: 0;
+        left: 0;
+
+        padding-left: 5vw;
+        padding-top: 5vh;
+
+        h5 {
+            margin: 1% 0;
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            width: 30vw;
+            letter-spacing: 2px;
+            margin: 1% 0;
+        }
+    }
+
+    .letter_bottom {
+        @include abs_w_h(100%, 40%);
+        top: 30vh;
+        padding-left: 5vw;
+        padding-top: 3vh;
+
+        .over_hidden_btn {
+            border: 2px solid black;
+            background-color: $purple;
+            width: 100%;
+        }
+    }
+
+    .over_hidden {
+        position: relative;
+        overflow: hidden;
+        width: 25%;
     }
 }
 
@@ -114,24 +110,20 @@
 .over_hidden {
     position: relative;
     overflow: hidden;
->>>>>>> 4c3041805b978f6572375cb1a2aaf10b1b19aea2
     @include without-underbar;
 }
 
 .slide_in {
     position: absolute;
-<<<<<<< HEAD
     left: -14vw;
     background-color: white;
     border: 2px solid black;
     transition: all 0.3s ease-in;
     width: 100%;
-=======
     left: -5vw;
     background-color: white;
     border: 2px solid black;
     transition: all 0.3s ease-in;
->>>>>>> 4c3041805b978f6572375cb1a2aaf10b1b19aea2
 }
 
 .over_hidden:hover .slide_in {
