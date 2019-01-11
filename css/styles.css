@@ -1538,6 +1538,7 @@ li:nth-child(3)::before {
   text-align: center;
   vertical-align: middle; }
 
+<<<<<<< HEAD
 .over_hidden_letter {
   position: absolute;
   top: 39vh;
@@ -1573,6 +1574,25 @@ li:nth-child(3)::before {
   left: 0;
   width: 100%;
   height: 50%;
+=======
+.contact_form {
+  position: absolute;
+  top: 39vh;
+  left: 22vw;
+  background-color: #a987f1;
+  width: 55vw;
+  height: 31vw;
+  color: black;
+  background-image: url(../img/contact.png);
+  background-size: cover; }
+
+.letter_top {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+>>>>>>> 4c3041805b978f6572375cb1a2aaf10b1b19aea2
   padding-left: 5vw;
   padding-top: 5vh; }
   .letter_top h5 {
@@ -1586,9 +1606,15 @@ li:nth-child(3)::before {
 
 .letter_bottom {
   position: absolute;
+<<<<<<< HEAD
   width: 100%;
   height: 40%;
   top: 30vh;
+=======
+  top: 30vh;
+  width: 100%;
+  height: 40%;
+>>>>>>> 4c3041805b978f6572375cb1a2aaf10b1b19aea2
   padding-left: 5vw;
   padding-top: 3vh; }
   .letter_bottom .over_hidden_btn {
@@ -1598,20 +1624,32 @@ li:nth-child(3)::before {
 
 .over_hidden {
   position: relative;
+<<<<<<< HEAD
   overflow: hidden;
   width: 25%; }
+=======
+  overflow: hidden; }
+>>>>>>> 4c3041805b978f6572375cb1a2aaf10b1b19aea2
   .over_hidden::after {
     height: 0; }
 
 .slide_in {
   position: absolute;
+<<<<<<< HEAD
   left: -14vw;
+=======
+  left: -5vw;
+>>>>>>> 4c3041805b978f6572375cb1a2aaf10b1b19aea2
   background-color: white;
   border: 2px solid black;
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
+<<<<<<< HEAD
   transition: all 0.3s ease-in;
   width: 100%; }
+=======
+  transition: all 0.3s ease-in; }
+>>>>>>> 4c3041805b978f6572375cb1a2aaf10b1b19aea2
 
 .over_hidden:hover .slide_in {
   left: 0; }
