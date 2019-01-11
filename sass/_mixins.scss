@@ -77,7 +77,7 @@
     background-size: cover;
 }
 
-@mixin over_hidden($width, $height){
+@mixin over_hidden($width, $height) {
     overflow: hidden;
     position: absolute;
     width: $width;
@@ -106,6 +106,20 @@
     margin-bottom: 10%;
 }
 
+// CONTACT SECTION
+@mixin abs_t_l_w_h($top, $left, $width, $height) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+}
+
+@mixin abs_w_h($width, $height) {
+    position: absolute;
+    width: $width;
+    height: $height;
+}
 // MEDIA QUERY
 @mixin for-phone-only {
     @media (max-width: 599px) {
